@@ -40,16 +40,12 @@ body {
 }
 
 .accordion__label::after {
-    content: "";
+    content: url('photos/add-symbol.svg');
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     right: 20px;
-    width: 20px;
-    height: 10px;
-    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
     background-size: contain;
-    transition: transform 0.4s;
+    transition: transform 0.2s;
+    transform-origin: center;
 }
 
 .accordion__content {
@@ -67,5 +63,6 @@ body {
 }
 
 .accordion__input:checked ~ .accordion__label::after {
-    transform: translateY(-50%) rotate(0.5turn);
+    transform-origin: center;
+    transform: rotate(45deg);
 }
