@@ -52,6 +52,7 @@ body {
     line-height: 1.6;
     font-size: 0.85em;
     display: none;
+    animation: fadeIn 1s;
 }
 
 .accordion__input {
@@ -60,9 +61,14 @@ body {
 
 .accordion__input:checked ~ .accordion__content {
     display: block;
+    opacity: 1;
 }
 
 .accordion__input:checked ~ .accordion__label::after {
-    transform-origin: center;
     transform: rotate(45deg);
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
