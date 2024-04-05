@@ -1,30 +1,14 @@
 body {
     background: radial-gradient(
         ellipse at center,
-        rgba(0, 0, 0, 0.88), /* Lighter color in the center */
+        rgba(0, 0, 0, 0.86), /* Lighter color in the center */
         rgba(0, 0, 0, 0.9) /* Darker color on the outside */
     );
-
-    font-family: sans-serif;
     color: white;
+    font-family: 'roboto', sans-serif;
+    background-repeat: no-repeat;
+    height:max-content;
 }
-
-nav {
-    min-height: 50px;
-}
-
-nav img {
-    width: 80px;
-}
-
-#welcoming {
-    
-    display: flex;
-    justify-content: center;
-    height: 180px;
-    align-items: center;
-}
-
 
 .accordion {
     max-width: 400px;
@@ -34,7 +18,7 @@ nav img {
     overflow: hidden;
     font-family: 'Quicksand', sans-serif;
 
-    background: #009578;
+    background: #3d3d3d;
 }
 
 .accordion__label,
@@ -69,7 +53,6 @@ nav img {
 }
 
 .accordion__content {
-    background-color: white;
     line-height: 1.6;
     font-size: 0.85em;
     display: none;
@@ -77,4 +60,12 @@ nav img {
 
 .accordion__input {
     display: none;
+}
+
+.accordion__input:checked ~ .accordion__content {
+    display: block;
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+    transform: translateY(-50%) rotate(0.5turn);
 }
