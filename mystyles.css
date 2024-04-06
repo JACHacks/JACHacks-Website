@@ -161,7 +161,6 @@ main {
 /* About */
 
 .about {
-
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -225,13 +224,16 @@ main {
 
 /* Accordion */
 .accordion {
-    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     /* Optional stuff next 4 lines*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     overflow: hidden;
     font-family: 'Quicksand', sans-serif;
-    background: #3d3d3d;
 }
 
 .accordion__label,
@@ -242,7 +244,7 @@ main {
 .accordion__label {
     display: block;
     color: white;
-    font-weight: 500;
+    font-weight: 800;
     cursor: pointer;
     position: relative;
     transition: background 0.1s;
@@ -255,17 +257,25 @@ main {
 .accordion__label::after {
     content: url('assets/add-symbol.svg');
     position: absolute;
-    right: 20px;
+    right: 1.5em;
     background-size: contain;
     transition: transform 0.2s;
     transform-origin: center;
 }
 
 .accordion__content {
-    line-height: 1.6;
     font-size: 0.85em;
     display: none;
     animation: fadeIn 1s;
+}
+
+.accordion .container {
+    width: 50%;
+    border-top: none;
+}
+
+.accordion .container:first-child, .accordion .container:nth-child(2) {
+    border-top: solid 2px #fff;
 }
 
 .accordion__input {
@@ -285,3 +295,10 @@ main {
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
+
+@media (max-width: 650px) {
+    /* Accordion */
+    .accordion {
+        grid-template-columns: 1fr;
+    }
+}
