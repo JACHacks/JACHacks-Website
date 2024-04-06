@@ -218,7 +218,6 @@ main {
 
 .stuff {
     background-color: #0c0c3b;
-    min-height: 40em;
 }
 
 /* Accordion */
@@ -307,4 +306,31 @@ main {
         width: 100%; /* Set width to 100% for smaller screens */
         margin: 0; /* Remove margin */
     }
+}
+
+/* footer */
+footer {
+    margin-top: 5em;
+    background-color: #07071f;
+    color: white;
+    padding: 1.25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+.left {
+    font-size: 1rem;
+}
+
+.right {
+    display: flex;
+}
+
+.right a {
+    margin-left: 0.625em;
+}
+
+.right a img {
+    width: 2em;
 }
