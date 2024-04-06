@@ -154,6 +154,30 @@ header {
 /* About */
 
 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    border: 2px solid #fff; /* Combined border for container */
+    --shadow-color: hsl(220deg 100% 55%);
+    filter: drop-shadow(
+      1px 2px 8px var(--shadow-color)
+    );
+}
+
+.container-top {
+    border-bottom: solid 2px #fff;
+    background-color: rgba(107, 138, 252, 255);
+    flex-grow: .4; /* Take up remaining vertical space */
+}
+
+.container-content {
+    background-color: rgba(38, 44, 80, 255);
+    flex-grow: 1; /* Take up remaining vertical space */
+}
+
 /* Accordion */
 .accordion {
     max-width: 400px;
