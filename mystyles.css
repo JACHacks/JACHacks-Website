@@ -1,9 +1,5 @@
 body {
-    background: radial-gradient(
-        ellipse at center,
-        rgba(36, 29, 63, 0.95), /* Lighter color in the center */
-        rgba(36, 29, 63, 1) /* Darker color on the outside */
-    );
+
     color: white;
     font-family: 'roboto', sans-serif;
     background-repeat: no-repeat;
@@ -17,6 +13,10 @@ Hack the North Colors
 */
 
 /*Header and navbar*/
+
+h1 {
+    margin: 0;
+}
 
 li {
     list-style: none;
@@ -103,6 +103,14 @@ header {
 
 /* Intro Page */
 
+main {
+    background: radial-gradient(
+        ellipse at center,
+        rgba(36, 29, 63, 0.95),
+        rgba(36, 29, 63, 1)
+    );
+}
+
 .intro {
     margin: auto;
     width: 80%;
@@ -152,11 +160,11 @@ header {
 /* About */
 
 .about {
+
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     max-width: 80%;
-    margin-bottom: 20em;
 }
 
 .container {
@@ -195,6 +203,25 @@ header {
 }
 
 
+/* spacer */
+.spacer {
+    aspect-ratio: 960/400;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('assets/layered-waves-haikei.svg');
+}
+
+/* stuff
+*/
+
+.stuff {
+    /*background-color: #130c0e;*/
+    background-color: #0c0c3b;
+    min-height: 40em;
+}
+
 /* Accordion */
 .accordion {
     max-width: 400px;
@@ -203,7 +230,6 @@ header {
     border-radius: 5px;
     overflow: hidden;
     font-family: 'Quicksand', sans-serif;
-
     background: #3d3d3d;
 }
 
