@@ -10,6 +10,49 @@ body {
     height:max-content;
 }
 
+/*Header and navbar*/
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.navbar a:hover {
+    color: lightblue;
+}
+
+header {
+    position: relative;
+    padding: 0 2em;
+}
+
+.navbar {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2em;
+}
+
+.navbar .toggle_btn {
+    content: url('assets/bars-solid.svg');
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Accordion */
+
 .accordion {
     max-width: 400px;
     /* Optional stuff next 4 lines*/
@@ -40,7 +83,7 @@ body {
 }
 
 .accordion__label::after {
-    content: url('photos/add-symbol.svg');
+    content: url('assets/add-symbol.svg');
     position: absolute;
     right: 20px;
     background-size: contain;
