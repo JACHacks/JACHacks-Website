@@ -12,17 +12,17 @@ body {
 
 /*Header and navbar*/
 
-.navbar li {
+li {
     list-style: none;
 }
 
-.navbar a {
+a {
     text-decoration: none;
     color: white;
     font-size: 1rem;
 }
 
-.navbar a:hover {
+a:hover {
     color: lightblue;
 }
 
@@ -37,6 +37,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-height: 3.2em;
 }
 
 .navbar .links {
@@ -51,8 +52,49 @@ header {
     display: none;
 }
 
-/* Accordion */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2em;
+    top: 3em;
+    width: 30%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 0;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
+.dropdown_menu .open {
+    height: 8em;
+}
+
+.dropdown_menu li {
+    padding: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+/* Accordion */
 .accordion {
     max-width: 400px;
     /* Optional stuff next 4 lines*/
