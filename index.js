@@ -1,10 +1,22 @@
-const toggleBtn = document.querySelector('.toggle_btn')
-const toggleBtnIcon = document.querySelector('.toggle_btn i')
-const dropDownMenu = document.querySelector('.dropdown_menu')
+let i = 0;
 
-toggleBtn.onclick = function () {
-    dropDownMenu.classList.toggle('open')
-    const isOpen = dropDownMenu.classList.contains('open')
+function showDropDownMenu() {
+    i ++;
 
-    toggleBtnIcon.classList = isOpen
+    const dropDown = document.querySelector('.dropdown_menu')
+    const barsIcon = document.querySelector('.bars-icon')
+    const closeIcon = document.querySelector('.close-icon')
+
+    if (i % 2)
+    {
+        barsIcon.style.display = 'none'
+        closeIcon.style.display = 'block'
+        dropDown.style.display = 'flex'
+    }
+
+    else {
+        barsIcon.style.display = 'block'
+        closeIcon.style.display = 'none'
+        dropDown.style.display = 'none'
+    }
 }

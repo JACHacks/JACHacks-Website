@@ -46,9 +46,17 @@ header {
 }
 
 .navbar .toggle_btn {
-    content: url('assets/bars-solid.svg');
+    /*content: url('assets/bars-solid.svg');*/
     height: 20px;
     cursor: pointer;
+    display: none;
+}
+
+.bars-icon {
+    display: block;
+}
+
+.close-icon {
     display: none;
 }
 
@@ -62,37 +70,25 @@ header {
     backdrop-filter: blur(15px);
     border-radius: 1rem;
     overflow: hidden;
-    height: 0;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.dropdown_menu .open {
-    height: 8em;
+    flex-direction: column;
+    align-items: center;
 }
 
 .dropdown_menu li {
     padding: 0.7em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
 
 /* Responsive */
 @media (max-width: 992px) {
-    .navbar .links,
-    .navbar .action_btn {
+    .navbar .links {
         display: none;
     }
 
     .navbar .toggle_btn {
         display: block;
     }
-
-    .dropdown_menu {
-        display: block;
-    }
 }
+
 
 /* Accordion */
 .accordion {

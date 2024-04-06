@@ -16,6 +16,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="mystyles.css">
     <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
@@ -27,8 +28,13 @@
                 <li><a href="#">Sponsors</a></li>
                 <li><a href="#">FAQ</a></li>
             </ul>
-            <div class="toggle_btn">
-                <img src="assets/bars-solid.svg">
+            <div onclick=showDropDownMenu() class="toggle_btn">
+                <div class="bars-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" fill="#ffffff"/></svg>
+                </div>
+                <div class="close-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"fill="#ffffff"/></svg>
+                </div>
             </div>
         </div>
 
