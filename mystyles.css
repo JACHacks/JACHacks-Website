@@ -70,7 +70,7 @@ header {
 .dropdown_menu {
     display: none;
     position: absolute;
-    right: 2em;
+    right: 3em;
     top: 3em;
     width: 30%;
     background: rgba(255, 255, 255, 0.1);
@@ -107,7 +107,7 @@ main {
     width: 80%;
     text-align: center; /* Center align the content horizontally */
     padding-top: 5em;
-    padding-bottom: 25em;
+    padding-bottom: 10em;
     display: flex;
     justify-content: center; /* Horizontally center the content */
     align-items: center;
@@ -135,7 +135,7 @@ main {
     align-items: center;
     justify-content: center;
     color: #ffff;
-    gap: 10px;
+    gap: 0.4em;
     font-weight: bold;
     border: 3px solid #ffffff4d;
     outline: none;
@@ -194,7 +194,37 @@ main {
   }  
 
 
+@media (max-width: 1300px) {
+    .main-logo {
+        width: 50em;
+    }
 
+    .info, .button {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-logo {
+        width: 40em;
+    }
+
+    .info, .button {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .main-logo {
+        width: 25em;
+    }
+
+    .info, .button {
+        font-size: 1.2rem;
+    }
+
+}
 
 /* About */
 
