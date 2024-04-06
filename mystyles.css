@@ -14,8 +14,8 @@ Hack the North Colors
 
 /*Header and navbar*/
 
-h1 {
-    margin: 0;
+.main-logo {
+    width: 60%;
 }
 
 li {
@@ -25,7 +25,7 @@ li {
 a {
     text-decoration: none;
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 a:hover {
@@ -36,8 +36,8 @@ header {
     position: relative;
 }
 
-#logo {
-    max-width: 8em;
+.logo img{
+    width: 7em;
 }
 
 .navbar {
@@ -45,8 +45,11 @@ header {
     background-color: #19142c;
     display: flex;
     align-items: center;
+
     justify-content: space-between;
     min-height: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
 }
@@ -104,11 +107,7 @@ header {
 /* Intro Page */
 
 main {
-    background: radial-gradient(
-        ellipse at center,
-        rgba(36, 29, 63, 0.95),
-        rgba(36, 29, 63, 1)
-    );
+    background: rgb(36, 29, 63);
 }
 
 .intro {
@@ -199,6 +198,10 @@ main {
 
     .navbar .toggle_btn {
         display: block;
+    }
+
+    .logo img{
+        width: 4em;
     }
 }
 
@@ -303,7 +306,7 @@ main {
         width: calc(100% - 20px); /* Each container takes full width for smaller screens */
     }
     .cols {
-        width: 100%; /* Set width to 100% for smaller screens */
+        width: 90%; /* Set width to 100% for smaller screens */
         margin: 0; /* Remove margin */
     }
 }
