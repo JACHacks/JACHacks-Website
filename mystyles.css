@@ -104,12 +104,10 @@ header {
 /* Intro Page */
 
 .intro {
-    text-align: center; /* Center align the content horizontally */
-}
-
-.intro {
     margin: auto;
     width: 80%;
+    text-align: center; /* Center align the content horizontally */
+    min-height: 90vh;
 }
 
 .btn-register {
@@ -153,13 +151,17 @@ header {
 
 /* About */
 
-
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 80%;
+    margin-bottom: 20em;
+}
 
 .container {
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 200px;
     border: 2px solid #fff; /* Combined border for container */
     --shadow-color: hsl(220deg 100% 55%);
     filter: drop-shadow(
@@ -177,6 +179,21 @@ header {
     background-color: rgba(38, 44, 80, 255);
     flex-grow: 1; /* Take up remaining vertical space */
 }
+
+.container-content img {
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+}
+
 
 /* Accordion */
 .accordion {
