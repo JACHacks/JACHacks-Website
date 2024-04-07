@@ -4,6 +4,7 @@ body {
     margin: 0;
     width: 100%;
     position: absolute;
+    font-family: JetBrains Mono, monospace;
 }
 
 html {
@@ -102,6 +103,11 @@ header {
     align-items: center;
 }
 
+/* .dropdown-item:hover {
+    filter: drop-shadow(#333 0px 0px 10px)
+
+} */
+
 .dropdown_menu li {
     padding: 0.7em;
 }
@@ -122,7 +128,7 @@ header {
 main {
     background: rgb(36, 29, 63);
     /*background-color: black;*/
-    min-height: 86vh;
+    /* min-height: 86vh; */
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -130,7 +136,7 @@ main {
 }
 
 .intro {
-    margin: 0 auto;
+    margin: 0 auto ;
     padding-top: 6em;
     width: 80%;
     text-align: center;
@@ -139,6 +145,18 @@ main {
     align-items: center;
     flex-direction: column;
 }
+
+.intro {
+    width: 100%;
+    height: 100%;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #241d40;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+    background-attachment: fixed; /* Keeps the background still effect */
+  }
+
 
 .main-logo {
     width: 60em;
@@ -452,6 +470,7 @@ main {
 
 .stuff {
     background-color: #0c0c3b;
+    z-index: 1;
 }
 
 .accordion-title {
@@ -582,6 +601,8 @@ main {
     #about {
         margin-bottom: 10em;
     }
+
+    #
 } 
 
 /* footer */
@@ -616,3 +637,152 @@ footer {
         font-size: 1rem;
     }
 }
+
+
+
+
+
+
+
+/* Glow button : */
+.glowbutton {
+    --glow-color: rgb(176, 252, 255);
+    --glow-spread-color: rgba(123, 251, 255, 0.781);
+    --enhanced-glow-color: rgb(206, 255, 255);
+    --btn-color: rgb(61, 127, 136);
+    border: 0.25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em 0.25em var(--glow-color),
+      0 0 4em 1em var(--glow-spread-color),
+      inset 0 0 0.75em 0.25em var(--glow-color);
+    text-shadow: 0 0 0.5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    z-index: 11;
+  }
+  
+  .glowbutton::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: 0.4;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+  }
+
+
+  
+  .glowbutton:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em 0.15em var(--glow-color),
+      0 0 4em 1.3em var(--glow-spread-color),
+      inset 0 0 0.45em 0.05em var(--glow-color);
+  }
+  
+  .glowbutton:active {
+    box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+      0 0 2.5em 2em var(--glow-spread-color),
+      inset 0 0 0.5em 0.25em var(--glow-color);
+      z-index: 11;
+  }
+
+
+
+
+  /* Wave divider */
+  body
+{
+  margin:0;
+  padding:0;
+  background-color:#03396c;
+}
+
+.editorial {
+    display: block;
+    width: 100%;
+    height: 60px;
+    max-height: 60px;
+    margin-top: 60px;
+    /* position: absolute; Set position to absolute or relative based on your requirement */
+    left: 0px;
+    bottom: 0px; /* Uncomment this if you want the SVG to stick to the bottom */
+    z-index: 1;
+  }
+
+.parallax1 > use {
+  animation: move-forever1 10s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+  col
+}
+.parallax2 > use {
+  animation: move-forever2 8s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax3 > use {
+  animation: move-forever3 6s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax4 > use {
+  animation: move-forever4 4s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+@keyframes move-forever1 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+@keyframes move-forever2 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+@keyframes move-forever3 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+@keyframes move-forever4 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+
+
+.shadow-item {
+    box-shadow: 3px 30px 50px #000000;
+    filter: drop-shadow( #000000b5);
+}
+
