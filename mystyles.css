@@ -271,8 +271,7 @@ main {
 .gear {
     height: 5em;
     position: absolute;
-    z-index: 0;
-    opacity: 0.75;
+    opacity: 0.7;
 }
 
 #gear1 {
@@ -283,6 +282,14 @@ main {
 #gear2 {
     left: 72%;
     top: 23%;
+}
+
+#computer-asset {
+    width: 25em;
+    position: absolute;
+    top: 27%;
+    left: 55%;
+    opacity: 0.75;
 }
 
 /* spacer */
@@ -375,12 +382,18 @@ main {
     }
 
     #gear2 {
-        left: 72%;
+        left: 78%;
         top: 25%;
     }
 
     .gear {
         height: 4em;
+    }
+
+    #computer-asset {
+        width: 18em;
+        top: 27%;
+        left: 55%;
     }
 }
 
@@ -403,6 +416,34 @@ main {
     }
     .gear {
         height: 3em;
+    }
+
+    #computer-asset {
+        width: 12em;
+        top: 21%;
+        left: 50%;
+    }
+}
+
+@media (max-width: 385px) {
+    #computer-asset {
+        width: 10em;
+        top: 18%;
+        left: 45%;
+    }
+
+    #gear1 {
+        left: 12%;
+        top: 20%;
+    }
+
+    #gear2 {
+        left: 72%;
+        top: 16%;
+    }
+
+    .gear {
+        height: 2.5em;
     }
 }
 
