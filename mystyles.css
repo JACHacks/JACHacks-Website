@@ -28,16 +28,13 @@ a {
     font-size: 1.2rem;
 }
 
-a:hover {
-    color: lightblue;
-}
-
 header {
     position: relative;
 }
 
 .logo img{
     width: 7em;
+    padding-left: 1em;
 }
 
 .navbar {
@@ -47,10 +44,6 @@ header {
     align-items: center;
     min-height: 6vh;
     justify-content: space-between;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
 }
 
 .navbar .links {
@@ -58,11 +51,40 @@ header {
     gap: 2em;
 }
 
+.nav-link {
+    text-decoration: none;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+  }
+  
+  .nav-link:hover {
+    opacity: 1;
+  }
+  
+  .nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: white;
+  }
+  
+  .nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+  }
+  
+  .nav-link-ltr:hover::before {
+    width: 100%;
+  }
 .navbar .toggle_btn {
-    /*content: url('assets/bars-solid.svg');*/
     height: 20px;
     cursor: pointer;
     display: none;
+    padding-right: 1em;
 }
 
 .bars-icon {
@@ -118,9 +140,9 @@ main {
     margin: 0 auto;
     padding-top: 6em;
     width: 80%;
-    text-align: center; /* Center align the content horizontally */
+    text-align: center;
     display: flex;
-    justify-content: center; /* Horizontally center the content */
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -259,7 +281,7 @@ main {
 
 /* About */
 
-.about {
+#about {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -272,7 +294,7 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 60%;
-    border: 2px solid #fff; /* Combined border for container */
+    border: 2px solid #fff;
     --shadow-color: hsl(220deg 100% 55%);
     filter: drop-shadow(
       1px 2px 8px var(--shadow-color)
@@ -294,7 +316,7 @@ main {
     padding: 0.8em;
     font-size: 1.2rem;
     line-height: 2rem;
-    flex-grow: 1; /* Take up remaining vertical space */
+    flex-grow: 1;
 }
 
 .container-content img {
@@ -302,7 +324,7 @@ main {
 }
 
 @media (max-width: 992px) {
-    .about {
+    #about {
         max-width: 85%;
     }
 
@@ -328,20 +350,12 @@ main {
 }
 
 @media (max-width: 720px) {
-    .about {
+    #about {
         flex-direction: column;
     }
 
     .container {
         max-width: 100%;
-    }
-
-    .container-top {
-        font-size: 1.5rem;
-    }
-
-    .container-content {
-        font-size: 1rem;
     }
 }
 
@@ -353,7 +367,7 @@ main {
 }
 
 /* Accordion */
-.accordion {
+#accordion {
     display: flex;
     overflow: hidden;
     font-family: 'Quicksand', sans-serif;
@@ -367,14 +381,23 @@ main {
     align-items: center;
 }
 
-.accordion__label,
+.accordion__label {
+    padding: 1em 1.2em;
+    font-size: 1.1rem;
+}
+
+#accordion p {
+    margin: 0;
+}
+
 .accordion__content {
-    padding: 14px 20px;
+    padding: 0em 1.2em;
+    padding-bottom: 1em;
 }
 
 .accordion__label {
     display: block;
-    color: white;
+    color: rgb(240, 234, 234);
     font-weight: 800;
     cursor: pointer;
     position: relative;
@@ -395,18 +418,15 @@ main {
 }
 
 .accordion__content {
-    font-size: 0.85em;
+    font-size: 1rem;
     display: none;
     animation: fadeIn 1s;
+    color: rgb(209, 208, 208);
 }
 
-.accordion .container {
-    width: calc(80% - 20px); /* Each container takes half the width for larger screens */
+#accordion .container {
+    width: calc(80% - 20px); 
     border-top: none;
-}
-
-.accordion .container:nth-child(odd) {
-    border-top: solid 2px #fff; /* Adjusted to only odd items */
 }
 
 .accordion__input {
@@ -427,17 +447,17 @@ main {
     100% { opacity: 1; }
 }
 
-@media (max-width: 650px) {
-    .accordion {
-        flex-direction: column; /* Switch to single column layout */
-        align-items: center; /* Center items horizontally */
+@media (max-width: 720px) {
+    #accordion {
+        flex-direction: column;
+        align-items: center;
     }
-    .accordion .container {
-        width: calc(100% - 20px); /* Each container takes full width for smaller screens */
+    #accordion .container {
+        width: calc(100% - 20px); 
     }
     .cols {
-        width: 90%; /* Set width to 100% for smaller screens */
-        margin: 0; /* Remove margin */
+        width: 90%;
+        margin: 0;
     }
 }
 
@@ -450,9 +470,9 @@ footer {
     justify-content: space-between;
     align-items: center;
     }
-    
+     
 .left {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .right {
@@ -460,7 +480,7 @@ footer {
 }
 
 .right a {
-    margin-left: 0.625em;
+    margin-left: 1em;
 }
 
 .right a img {
