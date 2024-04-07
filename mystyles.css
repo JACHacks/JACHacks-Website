@@ -6,6 +6,10 @@ body {
     position: absolute;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* 
 Hack the North Colors
 1st bg: #141625 (circular type gradient, lighter in middle)
@@ -260,16 +264,14 @@ main {
     justify-content: space-between;
     margin: 0 auto;
     padding-top: 6em;
-    max-width: 80%;
-}
-
-.show {
-    opacity: 1;
+    max-width: 60%;
+    margin-bottom: 20em;
 }
 
 .container {
     display: flex;
     flex-direction: column;
+    max-width: 60%;
     border: 2px solid #fff; /* Combined border for container */
     --shadow-color: hsl(220deg 100% 55%);
     filter: drop-shadow(
@@ -279,12 +281,19 @@ main {
 
 .container-top {
     border-bottom: solid 2px #fff;
+    padding: 0.8em;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(240, 234, 234);
     background-color: rgba(107, 138, 252, 255);
-    flex-grow: .4; /* Take up remaining vertical space */
 }
 
 .container-content {
     background-color: rgba(38, 44, 80, 255);
+    color: rgb(209, 208, 208);
+    padding: 0.8em;
+    font-size: 1.2rem;
+    line-height: 2rem;
     flex-grow: 1; /* Take up remaining vertical space */
 }
 
@@ -294,7 +303,11 @@ main {
 
 @media (max-width: 992px) {
     .about {
-        flex-direction: column;
+        max-width: 85%;
+    }
+
+    .container {
+        max-width: 80%;
     }
 
     .navbar .toggle_btn {
@@ -303,6 +316,32 @@ main {
 
     .logo img{
         width: 4em;
+    }
+
+    .container-top {
+        font-size: 1.6rem;
+    }
+
+    .container-content {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .container-top {
+        font-size: 1.5rem;
+    }
+
+    .container-content {
+        font-size: 1rem;
     }
 }
 
@@ -318,6 +357,7 @@ main {
     display: flex;
     overflow: hidden;
     font-family: 'Quicksand', sans-serif;
+    padding-bottom: 5em;
 }
 
 .cols {
@@ -403,7 +443,6 @@ main {
 
 /* footer */
 footer {
-    margin-top: 5em;
     background-color: #07071f;
     color: white;
     padding: 1.25em;
