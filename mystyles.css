@@ -81,7 +81,6 @@ header {
     width: 100%;
   }
 .navbar .toggle_btn {
-    height: 20px;
     cursor: pointer;
     display: none;
     padding-right: 1em;
@@ -325,7 +324,7 @@ main {
 
 @media (max-width: 992px) {
     #about {
-        max-width: 85%;
+        max-width: 90%;
     }
 
     .container {
@@ -366,6 +365,18 @@ main {
     background-color: #0c0c3b;
 }
 
+.accordion-title {
+
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 2em;
+    width: 60%;
+}
+
+.dummy {
+    opacity: 0;
+}
+
 /* Accordion */
 #accordion {
     display: flex;
@@ -404,10 +415,6 @@ main {
     transition: background 0.1s;
 }
 
-.accordion__label:hover {
-    background: rgba(0, 0, 0, 0.1);
-}
-
 .accordion__label::after {
     content: url('assets/add-symbol.svg');
     position: absolute;
@@ -425,11 +432,11 @@ main {
 }
 
 #accordion .container {
-    width: calc(80% - 20px); 
+    width: 80%; 
     border-top: none;
 }
 
-#accordion .container:first-child {
+#accordion .container:nth-child(2) {
     border-top: white 2px solid;
 }
 
@@ -452,18 +459,37 @@ main {
 }
 
 @media (max-width: 720px) {
+    #about {
+        margin-bottom: 8em;
+    }
+    
     #accordion {
         flex-direction: column;
         align-items: center;
     }
     #accordion .container {
-        width: calc(100% - 20px); 
+        width: 100%; 
     }
     .cols {
         width: 90%;
         margin: 0;
     }
+
+    .dummy {
+        display: none;
+    }
+
+    .accordion-title {
+        padding-bottom: 1.5em;
+        margin-right: auto;
+    }
 }
+
+@media (max-width: 992px) {
+    .accordion-title {
+        width: 80%;
+    }
+} 
 
 /* footer */
 footer {
