@@ -4,6 +4,7 @@ body {
     margin: 0;
     width: 100%;
     position: absolute;
+    font-family: JetBrains Mono, monospace;
 }
 
 html {
@@ -101,6 +102,11 @@ header {
     flex-direction: column;
     align-items: center;
 }
+
+/* .dropdown-item:hover {
+    filter: drop-shadow(#333 0px 0px 10px)
+
+} */
 
 .dropdown_menu li {
     padding: 0.7em;
@@ -582,6 +588,8 @@ main {
     #about {
         margin-bottom: 10em;
     }
+
+    #
 } 
 
 /* footer */
