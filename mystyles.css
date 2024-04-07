@@ -44,6 +44,7 @@ header {
     align-items: center;
     min-height: 6vh;
     justify-content: space-between;
+    padding-right: 1em;
 }
 
 .navbar .links {
@@ -83,7 +84,6 @@ header {
 .navbar .toggle_btn {
     cursor: pointer;
     display: none;
-    padding-right: 1em;
 }
 
 .bars-icon {
@@ -322,6 +322,10 @@ main {
     width: 100%;
 }
 
+.about-info {
+    margin-bottom: 6em;
+}
+
 @media (max-width: 992px) {
     #about {
         max-width: 90%;
@@ -489,6 +493,10 @@ main {
     .accordion-title {
         width: 80%;
     }
+
+    #about {
+        margin-bottom: 10em;
+    }
 } 
 
 /* footer */
@@ -515,4 +523,11 @@ footer {
 
 .right a img {
     width: 2em;
+}
+
+@media (max-width: 720px) {
+
+    .left {
+        font-size: 1rem;
+    }
 }
