@@ -82,3 +82,4 @@ glowButton.addEventListener('mouseout', () => {
     typedText.style.filter = 'drop-shadow(0px -10px 2px rgb(0, 0, 0))';
     glowButton.classList.remove('afterHover');
 });
+
