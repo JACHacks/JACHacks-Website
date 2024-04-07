@@ -60,6 +60,25 @@ var aText = new Array(
       setTimeout("typewriter()", iSpeed);
      }
     }
-    
-    
     typewriter();
+
+
+
+// Glow button shadow
+const glowButton = document.querySelector('.glowbutton');
+const mainLogo = document.querySelector('.main-logo');
+const typedText = document.querySelector('#typedtext');
+const buttonAfter = document.querySelector('.glowbutton::after');
+
+
+glowButton.addEventListener('mouseover', () => {
+    mainLogo.style.filter = 'drop-shadow(0px -20px 3px rgb(0, 0, 0))';
+    typedText.style.filter = 'drop-shadow(0px -10px 1px rgb(0, 0, 0))';
+    glowButton.classList.add('afterHover');
+});
+
+glowButton.addEventListener('mouseout', () => {
+    mainLogo.style.filter = 'drop-shadow(0px -20px 10px rgb(0, 0, 0))';
+    typedText.style.filter = 'drop-shadow(0px -10px 2px rgb(0, 0, 0))';
+    glowButton.classList.remove('afterHover');
+});

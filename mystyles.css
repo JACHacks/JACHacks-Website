@@ -160,7 +160,6 @@ main {
 
 .main-logo {
     width: 60em;
-    padding: 0.2em;
 }
 
 .info {
@@ -652,6 +651,7 @@ footer {
     --btn-color: rgb(61, 127, 136);
     border: 0.25em solid var(--glow-color);
     padding: 1em 3em;
+    margin-top: 20px;
     color: var(--glow-color);
     font-size: 15px;
     font-weight: bold;
@@ -664,21 +664,27 @@ footer {
     text-shadow: 0 0 0.5em var(--glow-color);
     position: relative;
     transition: all 0.3s;
-    z-index: 11;
+    z-index: 10;
   }
   
   .glowbutton::after {
     pointer-events: none;
     content: "";
     position: absolute;
-    top: 120%;
+    top: -50%;
     left: 0;
     height: 100%;
     width: 100%;
     background-color: var(--glow-spread-color);
     filter: blur(2em);
     opacity: 0.4;
+    rotate: 180deg;
     transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+    transition: all 0.3s;
+  }
+
+  .glowbutton.afterHover::after {
+    opacity: 0.7;
   }
 
 
@@ -690,6 +696,7 @@ footer {
       0 0 4em 1.3em var(--glow-spread-color),
       inset 0 0 0.45em 0.05em var(--glow-color);
   }
+
   
   .glowbutton:active {
     box-shadow: 0 0 0.6em 0.25em var(--glow-color),
@@ -780,9 +787,16 @@ footer {
 }
 
 
-
-.shadow-item {
-    box-shadow: 3px 30px 50px #000000;
-    filter: drop-shadow( #000000b5);
+.main-logo{
+    padding: 0.2em;    filter: drop-shadow(0px -20px 6px rgba(0, 0, 0, 0.885)); 
+    transition: all 0.2s ease-in-out;
 }
+
+
+#typedtext{
+    padding: 0.2em;    filter: drop-shadow(0px -10px 3px rgb(0, 0, 0)); 
+    transition: all 0.2s ease-in-out;
+}
+
+
 
