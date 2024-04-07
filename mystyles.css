@@ -429,6 +429,10 @@ main {
     border-top: none;
 }
 
+#accordion .container:first-child {
+    border-top: white 2px solid;
+}
+
 .accordion__input {
     display: none;
 }
