@@ -335,17 +335,6 @@ main {
     opacity: 0.75;
 }
 
-/* spacer */
-.spacer {
-    aspect-ratio: 960/400;
-    width: 100%;
-    margin-top: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url('assets/layered-waves-haikei.svg');
-}
-
 /* About */
 
 #about {
@@ -558,7 +547,7 @@ main {
 }
 
 .accordion__label::after {
-    content: url('../images/add-symbol.svg');
+    /*content: url('../images/add-symbol.svg');*/
     position: absolute;
     right: 1.5em;
     background-size: contain;
@@ -640,7 +629,6 @@ main {
         margin-bottom: 10em;
     }
 
-    #
 } 
 
 /* footer */
