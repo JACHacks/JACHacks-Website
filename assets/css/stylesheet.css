@@ -628,7 +628,7 @@ main {
         width: 100%; 
     }
     .cols {
-        min-width: 100%;
+      min-width: 90%;
         margin: 0;
     }
 
