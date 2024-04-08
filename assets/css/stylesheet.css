@@ -46,7 +46,6 @@ header {
 
 .logo img{
     width: 7em;
-    padding-left: 1em;
 }
 .navbar a {
     padding: 10px 20px; 
@@ -60,7 +59,7 @@ header {
     align-items: center;
     min-height: 6vh;
     justify-content: space-between;
-    padding-right: 0em;
+    padding-right: 0.8em;
     padding-top: 8px ;
 }
 
