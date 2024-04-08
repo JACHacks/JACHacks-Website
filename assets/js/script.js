@@ -78,8 +78,8 @@ glowButton.addEventListener('mouseover', () => {
 });
 
 glowButton.addEventListener('mouseout', () => {
-    mainLogo.style.filter = 'drop-shadow(0px -20px 10px rgb(0, 0, 0))';
-    typedText.style.filter = 'drop-shadow(0px -10px 2px rgb(0, 0, 0))';
+    mainLogo.style.filter = 'drop-shadow(0px -20px 6px rgba(0, 0, 0, 0.885))';
+    typedText.style.filter = 'drop-shadow(0px -10px 3px rgb(0, 0, 0))';
     glowButton.classList.remove('afterHover');
 });
 
