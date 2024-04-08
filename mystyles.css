@@ -9,7 +9,6 @@
 
 ::-webkit-scrollbar-track {
     background-color: #1c183ad5;
-    border-radius: 0px;
 }
 
 body {
@@ -19,6 +18,7 @@ body {
     width: 100%;
     position: absolute;
     font-family: JetBrains Mono, monospace;
+    cursor: url('assets/logo_icon.png'), auto;
 }
 
 html {
@@ -46,6 +46,10 @@ header {
 .logo img{
     width: 7em;
     padding-left: 1em;
+}
+.navbar a {
+    padding: 10px 20px; /* Adjust padding to make the navbar thinner */
+    /* other styles */
 }
 
 .navbar {
@@ -701,7 +705,22 @@ footer {
     rotate: 180deg;
     transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
     transition: all 0.3s;
-  }
+    
+}.glowbutton::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: 0.4;
+    rotate: 180deg;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+    transition: all 0.3s;
+}
 
   .glowbutton.afterHover::after {
     opacity: 0.7;
