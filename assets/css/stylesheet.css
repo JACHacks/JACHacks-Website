@@ -415,9 +415,6 @@ main {
       min-width: 100%;
     }
 
-    .container {
-        max-width: 80%;
-    }
 
     .navbar .toggle_btn {
         display: block;
@@ -517,10 +514,9 @@ main {
 }
 
 .accordion-title {
-    
     font-weight: 600;
     font-size: 2rem;
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
     width: 60%;
 }
 
@@ -532,8 +528,8 @@ main {
 #faq {
     display: flex;
     overflow: hidden;
-    width: 100%;
-    padding-bottom: 5em;
+    width: 90%;
+    padding-bottom: 8em;
 }
 
 .cols {
@@ -543,14 +539,14 @@ main {
     align-items: center;
 }
 
-#faq .cols {
-  max-width: 80%;
+#faq .container {
+  width: 100%;
 }
 
 .accordion__label {
     padding: 1em 1.2em;
     padding-right: 3em;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 #faq p {
@@ -581,14 +577,13 @@ main {
 }
 
 .accordion__content {
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: none;
     animation: fadeIn 1s;
     color: rgb(209, 208, 208);
 }
 
 #faq .container {
-    min-width: 100%; 
     border-top: none;
     --shadow-color: hsla(305, 81%, 62%, 0.944);
     filter: drop-shadow(
@@ -623,6 +618,19 @@ main {
   #faq {
       flex-direction: column;
       align-items: center;
+      width: 100%;
+  }
+
+  .accordion__label {
+    font-size: 1.2rem;
+  }
+
+  .accordion__content {
+    font-size: 1rem;
+  }
+
+  #faq .container {
+    min-width: 100%;
   }
 
   .dummy {
@@ -678,11 +686,6 @@ footer {
         font-size: 0.9rem;
     }
 }
-
-
-
-
-
 
 
 /* Glow button : */
@@ -871,7 +874,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
 }
 
 #cards {
