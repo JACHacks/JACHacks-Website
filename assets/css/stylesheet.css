@@ -547,7 +547,7 @@ main {
 }
 
 .accordion__label::after {
-    /*content: url('../images/add-symbol.svg');*/
+    content: url('../images/add-symbol.svg');
     position: absolute;
     right: 1.5em;
     background-size: contain;
