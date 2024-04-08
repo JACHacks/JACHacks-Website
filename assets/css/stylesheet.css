@@ -384,8 +384,12 @@ main {
     margin-bottom: 6em;
 }
 
+.about-pic {
+  min-width: 100%;
+}
+
 @media (max-width: 1920px) {
-  .about-pic {
+  .about-info, .about-pic {
     min-width: 25em;
   }
 }
@@ -454,7 +458,7 @@ main {
 
 @media (max-width: 720px) {
 
-
+  
     .container {
         max-width: 100%;
     }
