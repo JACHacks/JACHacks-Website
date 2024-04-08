@@ -499,7 +499,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #0c0c3b;
+    /* background-color: #0c0c3b; */
+    background-image: linear-gradient(#0c0c3b, #2c0c3b);
     z-index: 1;
 }
 
@@ -574,6 +575,10 @@ main {
 #faq .container {
     width: 80%; 
     border-top: none;
+    --shadow-color: hsla(305, 81%, 62%, 0.944);
+    filter: drop-shadow(
+      1px 2px 8px var(--shadow-color)
+    );
 }
 
 #faq .container:nth-child(2) {
@@ -892,11 +897,17 @@ footer {
     align-items: center;
     justify-content: center;
     transition: 0.5s;
+    --shadow-color: hsla(280, 100%, 55%, 0.944);
+    filter: drop-shadow(
+      1px 2px 8px var(--shadow-color)
+    );
   }
+
+
 
   .card:hover {
     
-    --shadow-color: hsl(212, 86%, 71%);
+    --shadow-color: hsla(280, 91%, 64%, 0.944);
     filter: drop-shadow(
       1px 2px 12px var(--shadow-color)
     );
@@ -966,7 +977,7 @@ footer {
   }
   
   .card-photo:hover {
-    transition: 0.3s;
+    transition: ease-in-out 0.3s;
     transform: scale(0.4) translate(160px, 150px);
     filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.795));
   }
