@@ -13,12 +13,13 @@
 
 body {
     color: white;
-    font-family: 'Quicksand', 'roboto', sans-serif;
+
     margin: 0;
     width: 100%;
     position: absolute;
     font-family: JetBrains Mono, monospace;
     cursor: url('assets/logo_icon.png'), auto;
+
 }
 
 html {
