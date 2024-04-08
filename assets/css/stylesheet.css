@@ -48,8 +48,7 @@ header {
     padding-left: 1em;
 }
 .navbar a {
-    padding: 10px 20px; /* Adjust padding to make the navbar thinner */
-    /* other styles */
+    padding: 10px 20px; 
 }
 
 .navbar {
@@ -95,7 +94,7 @@ header {
   }
   
   .nav-link-ltr:hover::before {
-    width: 100%;
+    width: 70%;
   }
 .navbar .toggle_btn {
     cursor: pointer;
@@ -220,6 +219,7 @@ main {
   .button:hover {
     transform: scale(1.05);
     border-color: #fff9;
+    z-index: 1000;
   }
   
   .button:hover .icon {
@@ -676,6 +676,7 @@ footer {
     --btn-color: rgb(61, 127, 136);
     border: 0.25em solid var(--glow-color);
     padding: 1em 3em;
+    cursor: pointer;
     margin-top: 20px;
     color: var(--glow-color);
     font-size: 15px;
@@ -725,6 +726,7 @@ footer {
 
   .glowbutton.afterHover::after {
     opacity: 0.7;
+    z-index: 10000000;
   }
 
 
@@ -828,8 +830,10 @@ footer {
 
 
 .main-logo{
-    padding: 0.2em;    filter: drop-shadow(0px -20px 6px rgba(0, 0, 0, 0.885)); 
+    padding: 0.2em;    
+    filter: drop-shadow(0px -20px 6px rgba(0, 0, 0, 0.885)); 
     transition: all 0.2s ease-in-out;
+    z-index: 0;
 }
 
 
@@ -837,6 +841,3 @@ footer {
     padding: 0.2em;    filter: drop-shadow(0px -10px 3px rgb(0, 0, 0)); 
     transition: all 0.2s ease-in-out;
 }
-
-
-
