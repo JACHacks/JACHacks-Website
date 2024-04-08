@@ -460,10 +460,7 @@ main {
     #about {
       max-width: 80%;
     }
-  
-    .container {
-        max-width: 100%;
-    }
+
     #gear1 {
         left: 12%;
         top: 22%;
@@ -534,8 +531,6 @@ main {
 /* Accordion */
 #faq {
     display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     width: 100%;
     padding-bottom: 5em;
@@ -548,8 +543,13 @@ main {
     align-items: center;
 }
 
+#faq .cols {
+  max-width: 80%;
+}
+
 .accordion__label {
     padding: 1em 1.2em;
+    padding-right: 3em;
     font-size: 1.1rem;
 }
 
@@ -588,7 +588,7 @@ main {
 }
 
 #faq .container {
-    width: 80%; 
+    min-width: 100%; 
     border-top: none;
     --shadow-color: hsla(305, 81%, 62%, 0.944);
     filter: drop-shadow(
@@ -618,40 +618,33 @@ main {
     100% { opacity: 1; }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 920px) {
     
-    #faq {
-        flex-direction: column;
-        align-items: center;
-    }
-    #faq .container {
-        width: 100%; 
-    }
-    .cols {
-      min-width: 90%;
-        margin: 0;
-    }
+  #faq {
+      flex-direction: column;
+      align-items: center;
+  }
 
-    .dummy {
-        display: none;
-    }
+  .dummy {
+    display: none;
+  }
 
-    .accordion-title {
-        padding-bottom: 1.5em;
-        margin-right: auto;
-    }
+  .cols {
+    width: 65%;
+  }
+
+  .accordion-title {
+    padding-bottom: 1.2em;
+    margin-right: auto;
+}
 }
 
-@media (max-width: 992px) {
-    .accordion-title {
-        width: 80%;
+@media (max-width: 720px) {
+    
+    .cols {
+      width: 90%;
     }
-
-    #about {
-        margin-bottom: 10em;
-    }
-
-} 
+}
 
 /* footer */
 footer {
