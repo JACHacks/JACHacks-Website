@@ -30,7 +30,7 @@ window.addEventListener('click', (e) => {
 // TYPEWRITER:
 // set up text to print, each item in array is new line
 var aText = new Array(
-    "May 11-12, 2024 &#x2022 John Abbott College"
+    "May 11-12, 2024 • John Abbott College"
     );
     var iSpeed = 100; // time delay of print out
     var iIndex = 0; // start printing array at this posision
@@ -74,14 +74,14 @@ const buttonAfter = document.querySelector('.glowbutton::after');
 
 
 glowButton.addEventListener('mouseover', () => {
-    mainLogo.style.filter = 'drop-shadow(0px -20px 3px rgb(0, 0, 0))';
-    typedText.style.filter = 'drop-shadow(0px -10px 1px rgb(0, 0, 0))';
+    mainLogo.style.filter = 'drop-shadow(0px -1em 0.5em rgba(0, 0, 0, 0.885))';
+    typedText.style.filter = 'drop-shadow(0px -0.6em 0.2em rgb(0, 0, 0))';
     glowButton.classList.add('afterHover');
 });
 
 glowButton.addEventListener('mouseout', () => {
-    mainLogo.style.filter = 'drop-shadow(0px -20px 6px rgba(0, 0, 0, 0.885))';
-    typedText.style.filter = 'drop-shadow(0px -10px 3px rgb(0, 0, 0))';
+    mainLogo.style.filter = 'drop-shadow(0px -1em 0.5em rgba(0, 0, 0, 0.885))';
+    typedText.style.filter = 'drop-shadow(0px -0.6em 0.2em rgb(0, 0, 0))';
     glowButton.classList.remove('afterHover');
 });
 
