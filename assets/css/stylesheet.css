@@ -63,6 +63,8 @@ header {
   display: flex;
   align-items: center;
   min-height: 6vh;
+  padding-right: 1em;
+  padding-left: 1em;
   justify-content: space-between;
 }
 
