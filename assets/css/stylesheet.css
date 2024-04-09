@@ -20,11 +20,11 @@
 body {
     color: white;
     margin: 0;
+    padding: 0;
     width: 100%;
-    position: absolute;
     font-family: JetBrains Mono, monospace;
-    cursor: url('assets/logo_icon.png'), auto;
-    background-color: white;
+    overflow-x: hidden !important;
+    background-color:#1B1630;
 }
 
 html {
@@ -32,15 +32,14 @@ html {
 }
 
 /* Header and navbar */
-
 li {
     list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
 }
 
 header {
@@ -105,10 +104,10 @@ header {
   .nav-link-ltr:hover::before {
     width: 60%;
   }
-.navbar .toggle_btn {
-    cursor: pointer;
-    display: none;
 
+.navbar .toggle_btn {
+  cursor: pointer;
+  display: none;
 }
 
 .dropdown_menu {
@@ -726,10 +725,7 @@ footer {
   body
 {
 
-  overflow-x: hidden !important;
-  margin:0;
-  padding:0;
-  background-color:#1B1630;
+
 }
 
 .editorial {
