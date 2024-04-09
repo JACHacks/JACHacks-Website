@@ -30,7 +30,7 @@ window.addEventListener('click', (e) => {
 // TYPEWRITER:
 // set up text to print, each item in array is new line
 var aText = new Array(
-    "May 11-12, 2024 &#x2022 John Abbott College"
+    "May 11-12, 2024 • John Abbott College"
     );
     var iSpeed = 100; // time delay of print out
     var iIndex = 0; // start printing array at this posision
