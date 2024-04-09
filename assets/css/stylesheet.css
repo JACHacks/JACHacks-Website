@@ -403,6 +403,7 @@ main {
       1px 2px 8px var(--shadow-color)
     );
     border-radius: 5px;
+    height: fit-content; /* Set the height to fit its content */
 }
 
 .container-top {
@@ -423,8 +424,17 @@ main {
     flex-grow: 1;
 }
 
+.container-content.jac-pic {
+  padding: 0;
+  height: 320px;
+  aspect-ratio: 2/1; /* Set aspect ratio to 1:1 */
+  overflow: hidden; /* Ensure image does not overflow container */
+}
+
 .container-content img {
-    width: 100%;
+  width: 100%; /* Ensure image fills its container */
+  height: 100%; /* Ensure image fills its container */
+  object-fit: cover; /* Cover the entire container with the image */
 }
 
 .about-info {
@@ -432,12 +442,16 @@ main {
 }
 
 .about-pic {
-  min-width: 100%;
+  min-width: 600px;
 }
 
 @media (max-width: 1920px) {
   .about-info, .about-pic {
-    min-width: 25em;
+    min-width: 400px;
+  }
+
+  .container-content.jac-pic {
+    height: 213px;
   }
 }
 
@@ -448,8 +462,12 @@ main {
 
   .about-info, .about-pic {
     min-width: 100%;
+    min-height: 100%;
   }
 
+  .container-content.jac-pic {
+    height: 20%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -457,11 +475,6 @@ main {
       max-width: 70%;
       flex-direction: column;
     }
-
-    .about-info, .about-pic {
-      min-width: 100%;
-    }
-
 
     .navbar .toggle_btn {
         display: block;
