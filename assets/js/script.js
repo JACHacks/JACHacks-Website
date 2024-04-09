@@ -20,12 +20,7 @@ function showDropDownMenu() {
 }
 
 window.addEventListener('click', (e) => {
-    if(e.target.classList.contains('hamburger-icon')) {
-        console.log("pressed on button");
-    }
-
-    else {
-        console.log('pressed on something else');
+    if(!(e.target.classList.contains('hamburger-icon'))) {
         document.querySelector('.dropdown_menu').classList.add('hide');
         document.querySelector('.bars-icon').classList.remove('hide');
         document.querySelector('.close-icon').classList.add('hide');
