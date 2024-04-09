@@ -901,8 +901,8 @@ footer {
   .card-photo {
   /* clear and add new css */
     transform: scale(0.3) translate(220px, 230px);
-    width: 400px;
-    height: 400px;
+    max-width: 400px;
+    max-height: 400px;
     position: absolute;
     margin-left: -128px;
     margin-top: -250px;
