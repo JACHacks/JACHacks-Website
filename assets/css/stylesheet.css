@@ -104,7 +104,7 @@ header {
   }
   
   .nav-link-ltr:hover::before {
-    width: 60%;
+    width: 100%;
   }
 
 .navbar .toggle_btn {
@@ -150,9 +150,6 @@ header {
 /* Intro Page */
 
 main {
-    background: rgb(0, 0, 0);
-    /*background-color: black;*/
-    /* min-height: 86vh; */
     justify-content: center;
     display: flex;
     flex-direction: column;
