@@ -336,26 +336,6 @@ main {
   font-size: 1.2rem;
 }
 
-.glowbutton::after {
-pointer-events: none;
-content: "";
-position: absolute;
-top: -50%;
-left: 0;
-height: 100%;
-width: 100%;
-background-color: var(--glow-spread-color);
-filter: blur(2em);
-opacity: 0.4;
-rotate: 180deg;
-transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
-transition: all 0.3s;
-}
-
-.glowbutton.afterHover::after {
-opacity: 0.7;
-z-index: 10;
-}
 
 .glowbutton:hover {
 color: var(--btn-color);
@@ -366,10 +346,9 @@ box-shadow: 0 0 1em 0.15em var(--glow-color),
 }
 
 .glowbutton:active {
-box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+box-shadow: 0 0 0.5em 0.15em var(--glow-color),
   0 0 2.5em 2em var(--glow-spread-color),
-  inset 0 0 0.5em 0.25em var(--glow-color);
-  z-index: 11;
+  inset 0 0 0.4em 0.15em var(--glow-color);
 }
 
 }
@@ -819,18 +798,17 @@ footer {
     height: 65px;
     max-height: 6%;
     margin-top: 60px;
-    /* position: absolute; Set position to absolute or relative based on your requirement */
     left: 0px;
-    bottom: 0px; /* Uncomment this if you want the SVG to stick to the bottom */
+    bottom: 0px;
     z-index: 1;
   }
+
 
 .parallax1 > use {
   animation: move-forever1 10s linear infinite;
   &:nth-child(1) {
     animation-delay: -2s;
   }
-  col
 }
 .parallax2 > use {
   animation: move-forever2 8s linear infinite;
@@ -928,7 +906,7 @@ footer {
   }
   @media (max-width: 720px) {
     .card {
-      width: 380px;
+      min-width: 100%;
       height: 300px;
     }
   }
