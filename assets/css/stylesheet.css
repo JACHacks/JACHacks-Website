@@ -336,7 +336,7 @@ main {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   .main-logo {
       width: 18em;
   }
@@ -347,6 +347,7 @@ main {
 
   #typedtext {
     margin-bottom: 0.7em;
+    font-size: 0.9em;
   }
 }
 
