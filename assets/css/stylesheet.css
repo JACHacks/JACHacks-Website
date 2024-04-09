@@ -426,7 +426,7 @@ main {
 
 .container-content.jac-pic {
   padding: 0;
-  height: 320px;
+
   aspect-ratio: 2/1; /* Set aspect ratio to 1:1 */
   overflow: hidden; /* Ensure image does not overflow container */
 }
@@ -924,8 +924,8 @@ footer {
   
   .card-title {
     text-align: center;
+    margin-top: 8em;
     color: var(--font-color);
-    margin-top: 17vh;
     font-size: 20px;
     font-weight: 400;
     /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
@@ -976,24 +976,13 @@ footer {
     transform: scale(0.35) translate(185px, 200px);
     filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.795));
   }
-  @media (max-width: 1300px) {
-  
-    .card-title {
-      margin-top: 19vh;
-    }
-  }
-    
-
-
-@media (max-width: 992px) {
-  
-  .card-title {
-    margin-top: 15vh;
-  }
-}
   
 @media (max-width: 720px) {
   .card {
     min-width: 100%;
+  }
+
+  .card-title {
+    margin-top: 9em;
   }
 }
