@@ -236,21 +236,6 @@ main {
   rotate: 180deg;
   transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
   transition: all 0.3s;
-  
-}.glowbutton::after {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--glow-spread-color);
-  filter: blur(2em);
-  opacity: 0.4;
-  rotate: 180deg;
-  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
-  transition: all 0.3s;
 }
 
 .glowbutton.afterHover::after {
@@ -325,6 +310,68 @@ main {
   #typedtext {
     font-size: 1.1rem;
   }
+
+  /* Glow button : */
+.glowbutton {
+  font-family: JetBrains Mono, monospace;
+  --glow-color: rgba(180, 242, 245, 0.904);
+  --glow-spread-color:rgba(113, 180, 182, 0.78);
+  --btn-color: rgb(61, 127, 136);
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  cursor: pointer;
+  margin-top: 1.5em;
+  color: var(--glow-color);
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 0.75em 0.15em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.65em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+  z-index: 10;
+  font-size: 1.2rem;
+}
+
+.glowbutton::after {
+pointer-events: none;
+content: "";
+position: absolute;
+top: -50%;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: var(--glow-spread-color);
+filter: blur(2em);
+opacity: 0.4;
+rotate: 180deg;
+transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+transition: all 0.3s;
+}
+
+.glowbutton.afterHover::after {
+opacity: 0.7;
+z-index: 10;
+}
+
+.glowbutton:hover {
+color: var(--btn-color);
+background-color: var(--glow-color);
+box-shadow: 0 0 1em 0.15em var(--glow-color),
+  0 0 4em 1.3em var(--glow-spread-color),
+  inset 0 0 0.45em 0.05em var(--glow-color);
+}
+
+.glowbutton:active {
+box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+  0 0 2.5em 2em var(--glow-spread-color),
+  inset 0 0 0.5em 0.25em var(--glow-color);
+  z-index: 11;
+}
+
 }
 
 @media (max-width: 480px) {
@@ -566,15 +613,13 @@ main {
     }
 }
 
-/* stuff
-*/
+/* stuff */
 
 .stuff {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: #0c0c3b; */
     background-image: linear-gradient(#0c0c3b, #2c0c3b);
     z-index: 1;
 }
