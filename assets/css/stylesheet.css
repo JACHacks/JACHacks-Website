@@ -720,7 +720,7 @@ footer {
   body
 {
 
-  overflow-y: hidden;
+  overflow-x: hidden !important;
   margin:0;
   padding:0;
   background-color:rgb(25, 20, 45, 0.9);
@@ -857,7 +857,7 @@ footer {
   }
   @media (max-width: 720px) {
     .card {
-      width: 400px;
+      width: 380px;
       height: 300px;
     }
   }
