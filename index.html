@@ -28,13 +28,13 @@
                 <li><a class="nav-link nav-link-ltr" href="#">Sponsors</a></li>
                 <li><a class="nav-link nav-link-ltr" href="#faq">FAQ</a></li>
             </ul>
-            <div onclick=showDropDownMenu() class="toggle_btn">
+            <div onclick=showDropDownMenu() class="toggle_btn" id="touch">
                 <div class="bars-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em">
-                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" fill="#ffffff" />
+                    <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em">
+                        <path class="hamburger-icon" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" fill="#ffffff" />
                     </svg>
                 </div>
-                <div class="close-icon">
+                <div class="close-icon hide">
                     <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em">
                         <path
                             d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        <div class="dropdown_menu">
+        <div class="dropdown_menu hide">
             <li><a href="#about">About</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#">Sponsors</a></li>
@@ -134,7 +134,7 @@
             <h1>Meet our team</h1>
 
             <div id="cards">
-                <div class="card">
+                <div class="card container">
                     <img class="card-photo" src="assets/images/team/Carson.png">
                     <div class="card-title">Carson <br>
                         <span>President 📍</span>
@@ -281,7 +281,7 @@
 
                 <div class="container">
                     <input type="checkbox" name="faq" id="question2" class="accordion__input">
-                    <label for="question2" class="accordion__label ">Do I need a team?</label>
+                    <label for="question2" class="accordion__label">Do I need a team? Extremely gfjgklfjgkfdf</label>
                     <div class="accordion__content">
                         <p>
                             Hack solo or assemble your dream team! The team size is capped at four students. If you're
