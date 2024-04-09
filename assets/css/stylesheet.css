@@ -1,4 +1,4 @@
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     width: 12px;
 }
 
@@ -9,7 +9,7 @@
 
 ::-webkit-scrollbar-track {
     background-color: #1c183ad5;
-}
+}*/
 
 /* Text highlight CSS, change colour to whatever you want, just temp */
 ::selection{
@@ -310,47 +310,10 @@ main {
   #typedtext {
     font-size: 1.1rem;
   }
-
-  /* Glow button : */
-.glowbutton {
-  font-family: JetBrains Mono, monospace;
-  --glow-color: rgba(180, 242, 245, 0.904);
-  --glow-spread-color:rgba(113, 180, 182, 0.78);
-  --btn-color: rgb(61, 127, 136);
-  border: 0.25em solid var(--glow-color);
-  padding: 1em 3em;
-  cursor: pointer;
-  margin-top: 1.5em;
-  color: var(--glow-color);
-  font-weight: bold;
-  background-color: var(--btn-color);
-  border-radius: 1em;
-  outline: none;
-  box-shadow: 0 0 0.75em 0.15em var(--glow-color),
-    0 0 4em 1em var(--glow-spread-color),
-    inset 0 0 0.65em 0.25em var(--glow-color);
-  text-shadow: 0 0 0.5em var(--glow-color);
-  position: relative;
-  transition: all 0.3s;
-  z-index: 10;
-  font-size: 1.2rem;
-}
-
-
-.glowbutton:hover {
-color: var(--btn-color);
-background-color: var(--glow-color);
-box-shadow: 0 0 1em 0.15em var(--glow-color),
-  0 0 4em 1.3em var(--glow-spread-color),
-  inset 0 0 0.45em 0.05em var(--glow-color);
-}
-
-.glowbutton:active {
-box-shadow: 0 0 0.5em 0.15em var(--glow-color),
-  0 0 2.5em 2em var(--glow-spread-color),
-  inset 0 0 0.4em 0.15em var(--glow-color);
-}
-
+  .glowbutton {
+  --glow-color: rgba(180, 242, 245, 0.822);
+  --glow-spread-color:rgba(99, 163, 165, 0.78);
+  }
 }
 
 @media (max-width: 480px) {
