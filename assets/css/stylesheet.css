@@ -719,9 +719,11 @@ footer {
   /* Wave divider */
   body
 {
+
+  overflow-y: hidden;
   margin:0;
   padding:0;
-  background-color:#03396c00;
+  background-color:rgb(25, 20, 45, 0.9);
 }
 
 .editorial {
