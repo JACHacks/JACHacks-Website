@@ -979,7 +979,7 @@ footer {
   @media (max-width: 1300px) {
   
     .card-title {
-      margin-top: 17vh;
+      margin-top: 19vh;
     }
   }
     
@@ -988,16 +988,12 @@ footer {
 @media (max-width: 992px) {
   
   .card-title {
-    margin-top: 16vh;
+    margin-top: 15vh;
   }
 }
   
 @media (max-width: 720px) {
   .card {
     min-width: 100%;
-  }
-
-  .card-title {
-    margin-top: 18vh;
   }
 }
