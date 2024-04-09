@@ -1,29 +1,36 @@
-let i = 0;
+//
 
 function showDropDownMenu() {
-    i ++;
-
     const dropDown = document.querySelector('.dropdown_menu')
     const barsIcon = document.querySelector('.bars-icon')
     const closeIcon = document.querySelector('.close-icon')
 
-    if (i % 2)
-    {
-        barsIcon.style.display = 'none'
-        closeIcon.style.display = 'block'
-        dropDown.style.display = 'flex'
+    if (barsIcon.classList.contains('hide'))
+    {   
+        barsIcon.classList.remove('hide');
+        closeIcon.classList.add('hide');
+        dropDown.classList.add('hide');
     }
 
     else {
-        barsIcon.style.display = 'block'
-        closeIcon.style.display = 'none'
-        dropDown.style.display = 'none'
+        barsIcon.classList.add('hide');
+        closeIcon.classList.remove('hide');
+        dropDown.classList.remove('hide');
     }
 }
 
+window.addEventListener('click', (e) => {
+    if(e.target.classList.contains('hamburger-icon')) {
+        console.log("pressed on button");
+    }
 
-
-
+    else {
+        console.log('pressed on something else');
+        document.querySelector('.dropdown_menu').classList.add('hide');
+        document.querySelector('.bars-icon').classList.remove('hide');
+        document.querySelector('.close-icon').classList.add('hide');
+    }
+})
 
 // TYPEWRITER:
 // set up text to print, each item in array is new line
