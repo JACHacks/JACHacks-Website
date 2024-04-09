@@ -11,6 +11,12 @@
     background-color: #1c183ad5;
 }
 
+/* Text highlight CSS, change colour to whatever you want, just temp */
+::selection{
+  background-color: rgba(34, 255, 0, 0.329);
+  color: rgb(255, 255, 255);
+}
+
 body {
     color: white;
     margin: 0;
