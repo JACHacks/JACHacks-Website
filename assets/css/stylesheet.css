@@ -869,8 +869,8 @@ footer {
     --font-color-sub: #7e7e7e;
     --bg-color: rgb(40, 44, 81);
     --main-color: #fefefe;
-    width: 215px;
-    height: 324px;
+    width: 300px;
+    height: 400px;
     background: var(--bg-color);
     border: 2px solid var(--main-color);
     border-radius: 5px;
