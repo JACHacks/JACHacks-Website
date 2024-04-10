@@ -386,7 +386,6 @@ main {
 /* About */
 
 #about {
-  /* width: 80%; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -451,6 +450,7 @@ main {
 }
 
 @media (max-width: 1920px) {
+  
   .about-info, .about-pic {
     min-width: 400px;
   }
@@ -463,6 +463,7 @@ main {
 @media (max-width: 1350px) {
   #about {
     flex-direction: column;
+    width: 80%;
   }
 
   .about-info, .about-pic {
@@ -697,7 +698,7 @@ h1 {
   #faq {
       flex-direction: column;
       align-items: center;
-      width: 100%;
+      width: 95%;
   }
 
   .accordion__label {
