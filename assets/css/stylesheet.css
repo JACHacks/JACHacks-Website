@@ -874,13 +874,13 @@ footer {
   margin-left: -128px;
   margin-top: -250px;
   border-radius: 30%;
-  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.693));
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.72));
   transition: transform 0.3s ease-out;
 }
 
 .card-photo:hover {
   transform: scale(0.35) translate(185px, 200px);
-  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.795));
+  /*filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.795));*/
 }
 
 .card-title {
