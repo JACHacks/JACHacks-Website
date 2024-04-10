@@ -386,7 +386,6 @@ main {
 /* About */
 
 #about {
-  /* width: 80%; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -451,6 +450,7 @@ main {
 }
 
 @media (max-width: 1920px) {
+  
   .about-info, .about-pic {
     min-width: 400px;
   }
@@ -463,6 +463,7 @@ main {
 @media (max-width: 1350px) {
   #about {
     flex-direction: column;
+    width: 80%;
   }
 
   .about-info, .about-pic {
@@ -585,8 +586,9 @@ main {
 }
 
 h1 {
-  padding-bottom: 1.5em;
+  /* padding-bottom: 1.5em; */
   font-size: 2em;
+  margin:0;
 }
 
 .accordion-title {
@@ -697,7 +699,7 @@ h1 {
   #faq {
       flex-direction: column;
       align-items: center;
-      width: 100%;
+      width: 95%;
   }
 
   .accordion__label {
@@ -725,9 +727,7 @@ h1 {
     margin-right: auto;
   }
 
-  h1 {
-    padding-bottom: 1.2em;
-  }
+
 
 }
 
@@ -739,10 +739,6 @@ h1 {
 
     .accordion-title, h1 {
       font-size: 1.5rem;
-    }
-
-    h1 {
-      padding-bottom: 1em;
     }
 
     .accordion__label {
@@ -871,6 +867,8 @@ footer {
     margin-bottom: 15vh;
 }
 
+/*  */
+
 #cards {
   /* width: 70%; */
   display: flex;
@@ -989,4 +987,14 @@ footer {
 .card-title {
   margin-top: 9em;
 }
+}
+
+
+
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc; /* You can change the color */
+  /* margin: 20px 0; You can adjust the margin */
+  width: 50%;
 }
