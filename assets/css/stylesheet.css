@@ -285,21 +285,21 @@ main {
   }
 
   .main-logo {   
-    filter: drop-shadow(0px -13px 4px rgba(0, 0, 0, 0.885)); 
+    /* filter: drop-shadow(0px -13px 4px rgba(0, 0, 0, 0.885));  */
   }
 
   #typedtext{  
-    filter: drop-shadow(0px -7px 2.2px rgb(0, 0, 0)); 
+    /* filter: drop-shadow(0px -7px 2.2px rgb(0, 0, 0));  */
   }
 }
 
 @media (max-width: 560px) {
   .main-logo {   
-    filter: drop-shadow(0px -11px 3px rgba(0, 0, 0, 0.885)); 
+    /* filter: drop-shadow(0px -11px 3px rgba(0, 0, 0, 0.885));  */
   }
 
   #typedtext{  
-    filter: drop-shadow(0px -6px 2px rgb(0, 0, 0)); 
+    /* filter: drop-shadow(0px -6px 2px rgb(0, 0, 0));  */
   }
 
     .main-logo {
