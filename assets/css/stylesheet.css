@@ -929,6 +929,7 @@ footer {
   transform: translateY(-5px);
 }
 
+/*
 @media (max-width: 720px) {
   .card {
     min-width: 100%;
@@ -937,7 +938,7 @@ footer {
   .card-title {
     margin-top: 9em;
   }
-} 
+}*/
 
 
 hr {
