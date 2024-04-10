@@ -165,7 +165,8 @@ main {
 }
 
 .intro {
-    height: 90vh;
+  margin: 100%;
+    height: 95vh;
     margin: 0 auto;
     padding-top: 6em;
     width: 80%;
@@ -182,7 +183,7 @@ main {
 
 
 .main-logo {
-    width: 50em;
+    width: 45em;
     padding: 0.2em;    
     filter: drop-shadow(0px -20px 6px rgba(0, 0, 0, 0.885)); 
     transition: all 0.2s ease-in-out;
@@ -193,7 +194,7 @@ main {
   padding: 0.2em;    
   filter: drop-shadow(0px -10px 3px rgb(0, 0, 0)); 
   transition: all 0.2s ease-in-out;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 /* Glow button : */
@@ -218,7 +219,7 @@ main {
     position: relative;
     transition: all 0.3s;
     z-index: 10;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .glowbutton::after {
@@ -257,6 +258,7 @@ main {
     z-index: 11;
 }
 
+
 @media (max-width: 1300px) {
     .main-logo {
         width: 40em;
@@ -266,9 +268,9 @@ main {
         font-size: 1.4rem;
     }
 
-    .glowbutton {
+    /* .glowbutton {
       font-size: 1rem;
-    }
+    } */
 }
 
 @media (max-width: 800px) {
@@ -384,13 +386,16 @@ main {
 /* About */
 
 #about {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding-top: 15vh;
-    max-width: 60%;
-    border-radius: 5px;
-    margin-bottom: 10em;
+  /* width: 80%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  /* margin: 0 auto; */
+  padding-top: 15vh;
+  /* max-width: 60%; */
+  border-radius: 5px;
+  margin-bottom: 5em;
 }
 
 .container {
@@ -426,7 +431,6 @@ main {
 
 .container-content.jac-pic {
   padding: 0;
-
   aspect-ratio: 2/1; /* Set aspect ratio to 1:1 */
   overflow: hidden; /* Ensure image does not overflow container */
 }
@@ -438,11 +442,12 @@ main {
 }
 
 .about-info {
-    margin-bottom: 6em;
+  width: 100%;
+    margin-bottom: 3em;
 }
 
 .about-pic {
-  min-width: 600px;
+ width: 100%;
 }
 
 @media (max-width: 1920px) {
@@ -790,7 +795,7 @@ footer {
     width: 100%;
     height: 65px;
     max-height: 6%;
-    margin-top: 60px;
+    margin-top: 30px;
     left: 0px;
     bottom: 0px;
     z-index: 1;
@@ -858,7 +863,7 @@ footer {
 /* before adding the photo to the div with the "card-photo" class, in the css clear the styles for .card-photo and remove .card-photo::before and .card-photo::after, then set the desired styles for .card- photo. */
 
 #team {
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
