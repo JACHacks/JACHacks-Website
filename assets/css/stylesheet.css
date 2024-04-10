@@ -586,8 +586,9 @@ main {
 }
 
 h1 {
-  padding-bottom: 1.5em;
+  /* padding-bottom: 1.5em; */
   font-size: 2em;
+  margin:0;
 }
 
 .accordion-title {
@@ -726,9 +727,7 @@ h1 {
     margin-right: auto;
   }
 
-  h1 {
-    padding-bottom: 1.2em;
-  }
+
 
 }
 
@@ -740,10 +739,6 @@ h1 {
 
     .accordion-title, h1 {
       font-size: 1.5rem;
-    }
-
-    h1 {
-      padding-bottom: 1em;
     }
 
     .accordion__label {
@@ -872,6 +867,8 @@ footer {
     margin-bottom: 15vh;
 }
 
+/*  */
+
 #cards {
   /* width: 70%; */
   display: flex;
@@ -990,4 +987,14 @@ footer {
 .card-title {
   margin-top: 9em;
 }
+}
+
+
+
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc; /* You can change the color */
+  /* margin: 20px 0; You can adjust the margin */
+  width: 50%;
 }
