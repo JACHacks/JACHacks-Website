@@ -929,16 +929,16 @@ footer {
   transform: translateY(-5px);
 }
 
-/*
+
 @media (max-width: 720px) {
   .card {
-    min-width: 100%;
+    min-width: 95%;
   }
 
   .card-title {
     margin-top: 9em;
   }
-}*/
+}
 
 
 hr {
