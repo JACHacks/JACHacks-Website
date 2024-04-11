@@ -734,7 +734,6 @@ footer {
   justify-content: center;
   transition: 0.5s;
   filter: none;
-  /*--shadow-color: hsla(280, 100%, 55%, 0.944);*/
 }
 
 .card-photo {
@@ -793,12 +792,20 @@ footer {
   margin-top: 4px;
 }
 
+@media (min-width: 720px) {
+  .card {filter: drop-shadow(
+      1px 2px 8px var(--shadow-color)
+    );
+    --shadow-color: hsla(280, 100%, 55%, 0.944);
+  }
+}
 
 @media (max-width: 720px) {
   .card {
     min-width: 95%;
   }
 }
+
 
 
 hr {
