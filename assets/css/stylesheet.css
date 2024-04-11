@@ -12,10 +12,17 @@
 }
 
 /* Text highlight CSS, change colour to whatever you want, just temp */
-::selection{
-  background-color: rgba(34, 255, 0, 0.329);
-  color: rgb(255, 255, 255);
+::-moz-selection { /* Code for Firefox */
+  color: #ffffff;
+  background: rgb(163, 98, 154);
 }
+
+::selection {
+  color: rgb(255, 255, 255);
+  background: rgba(207, 130, 211, 0.523);
+}
+
+
 
 body {
     color: white;
@@ -371,7 +378,9 @@ main {
 }
 
 .container-content {
-    background-color: rgba(38, 44, 80, 255);
+    /* background-color: rgba(38, 44, 80, 255); */
+    background-image: linear-gradient(#282c51, #0f1336);
+
     color: rgb(209, 208, 208);
     padding: 0.8em;
     font-size: 1.2rem;
@@ -727,6 +736,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   gap: 30px; 
+  
 }
 
 .card {
