@@ -461,7 +461,7 @@ h1 {
 #faq {
   display: flex;
   width: 85%;
-  padding-bottom: 8em;
+  padding-bottom: 8vh;
 }
 
 .cols {
@@ -500,6 +500,7 @@ h1 {
   position: relative;
   transition: background 0.1s;
   align-items: center;
+  filter: none;
 }
 
 .accordion__label::after {
@@ -517,6 +518,7 @@ h1 {
   display: none;
   animation: fadeIn 1s;
   color: rgb(209, 208, 208);
+  filter: none;
 }
 
 #faq .container:nth-child(2) {
@@ -529,6 +531,7 @@ h1 {
 
 .accordion__input:checked ~ .accordion__content {
   display: block;
+  filter: none;
   opacity: 1;
 }
 
@@ -621,15 +624,13 @@ footer {
 }
 
 @media (max-width: 720px) {
-
-    .left {
-        font-size: 0.9rem;
-    }
+  .left {
+      font-size: 0.9rem;
+  }
 }
 
 
-  /* Wave divider */
-
+/* Wave divider */
 .editorial {
     display: block;
     width: 100%;
@@ -640,7 +641,6 @@ footer {
     bottom: 0px;
     z-index: 1;
   }
-
 
 .parallax1 > use {
   animation: move-forever1 10s linear infinite;
