@@ -6,9 +6,9 @@ This is the official JAC Hacks Website Repo.
 
 
 ## Table of Contents:
- - [Overview](https://github.com/JACHacksJACHacks-Website?tab=readme-ov-file#overview)
- - [Team](https://github.com/JACHacksJACHacks-Website?tab=readme-ov-file#team)
- - [Guide](https://github.com/JACHacksJACHacks-Website?tab=readme-ov-file#guide)
+ - [Overview](https://github.com/JACHacks/JACHacks-Website/edit/main/README.md#overview)
+ - [Team](https://github.com/JACHacks/JACHacks-Website/edit/main/README.md#team)
+ - [Guide](https://github.com/JACHacks/JACHacks-Website/edit/main/README.md#guide)
 
    
 ## Overview
