@@ -1,15 +1,15 @@
-/*::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #e3e2f06f;
+    background-color:#1B1630;
     border-radius: 20px;
 }
 
 ::-webkit-scrollbar-track {
     background-color: #1c183ad5;
-}*/
+}
 
 /* Text highlight CSS, change colour to whatever you want, just temp */
 ::selection{
@@ -430,7 +430,6 @@ main {
 }
 
 /* stuff */
-
 .stuff {
     display: flex;
     flex-direction: column;
@@ -448,10 +447,10 @@ h1 {
 }
 
 .accordion-title {
-    font-weight: 600;
-    font-size: 2rem;
-    padding-bottom: 1.5em;
-    width: 60%;
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 1.5em;
+  width: 60%;
 }
 
 .dummy {
@@ -460,17 +459,17 @@ h1 {
 
 /* Accordion */
 #faq {
-    display: flex;
-    overflow: hidden;
-    width: 85%;
-    padding-bottom: 8em;
+  display: flex;
+  overflow: hidden;
+  width: 85%;
+  padding-bottom: 8em;
 }
 
 .cols {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
 }
 
 #faq .container {
@@ -480,49 +479,49 @@ h1 {
 }
 
 .accordion__label {
-    padding: 1em 1.2em;
-    padding-right: 3em;
-    font-size: 1.3rem;
+  padding: 1em 1.2em;
+  padding-right: 3em;
+  font-size: 1.3rem;
 }
 
 #faq p {
-    margin: 0;
+  margin: 0;
 }
 
 .accordion__content {
-    padding: 0em 1.2em;
-    padding-bottom: 1em;
+  padding: 0em 1.2em;
+  padding-bottom: 1em;
 }
 
 .accordion__label {
-    display: block;
-    color: rgb(240, 234, 234);
-    font-weight: 800;
-    cursor: pointer;
-    position: relative;
-    transition: background 0.1s;
-    align-items: center;
+  display: block;
+  color: rgb(240, 234, 234);
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.1s;
+  align-items: center;
 }
 
 .accordion__label::after {
-    content: url('../images/add-symbol.svg');
-    position: absolute;
-    transform-origin: center;
-    top: calc(50% - 10px);
-    right: 1.5em;
-    background-size: contain;
-    transition: transform 0.2s;
+  content: url('../images/add-symbol.svg');
+  position: absolute;
+  transform-origin: center;
+  top: calc(50% - 10px);
+  right: 1.5em;
+  background-size: contain;
+  transition: transform 0.2s;
 }
 
 .accordion__content {
-    font-size: 1.1rem;
-    display: none;
-    animation: fadeIn 1s;
-    color: rgb(209, 208, 208);
+  font-size: 1.1rem;
+  display: none;
+  animation: fadeIn 1s;
+  color: rgb(209, 208, 208);
 }
 
 #faq .container:nth-child(2) {
-    border-top: white 2px solid;
+  border-top: white 2px solid;
 }
 
 .accordion__input {
@@ -530,8 +529,8 @@ h1 {
 }
 
 .accordion__input:checked ~ .accordion__content {
-    display: block;
-    opacity: 1;
+  display: block;
+  opacity: 1;
 }
 
 .accordion__input:checked ~ .accordion__label::after {
@@ -739,10 +738,9 @@ footer {
 
 .card-photo {
   margin-top: 10px;
-  width: 128px;
-  height: 128;
+  width: 165px;
+  height: 165;
   border-radius: 30%;
-  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.72));
   transition: transform 0.3s ease-out;
 }
 
