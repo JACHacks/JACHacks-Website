@@ -867,25 +867,20 @@ footer {
 }
 
 .card-photo {
-  transform: scale(0.3) translate(220px, 230px);
-  max-width: 365px;
-  max-height: 365px;
-  position: absolute;
-  margin-left: -128px;
-  margin-top: -250px;
+  width: 128px;
+  height: 128px;
   border-radius: 30%;
   filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.72));
   transition: transform 0.3s ease-out;
 }
 
 .card-photo:hover {
-  transform: scale(0.35) translate(185px, 200px);
-  /*filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.795));*/
+  transform: scale(1.1);
 }
 
 .card-title {
   text-align: center;
-  margin-top: 8em;
+  margin-top: 1em;
   color: #fefefe;
   font-size: 20px;
   font-weight: 400;
@@ -933,10 +928,6 @@ footer {
 @media (max-width: 720px) {
   .card {
     min-width: 95%;
-  }
-
-  .card-title {
-    margin-top: 9em;
   }
 }
 
