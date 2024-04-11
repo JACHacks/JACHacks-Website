@@ -733,7 +733,8 @@ footer {
   align-items: center;
   justify-content: center;
   transition: 0.5s;
-  --shadow-color: hsla(280, 100%, 55%, 0.944);
+  filter: none;
+  /*--shadow-color: hsla(280, 100%, 55%, 0.944);*/
 }
 
 .card-photo {
@@ -779,7 +780,6 @@ footer {
   width: 30px;
   height: 30px;
   border: none;
-  background: transparent;
   cursor: pointer;
 }
 
