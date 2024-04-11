@@ -460,7 +460,6 @@ h1 {
 /* Accordion */
 #faq {
   display: flex;
-  overflow: hidden;
   width: 85%;
   padding-bottom: 8em;
 }
@@ -476,6 +475,7 @@ h1 {
   width: 100%;
   border-top: none;
   --shadow-color: hsla(305, 81%, 62%, 0.944);
+  filter: none;
 }
 
 .accordion__label {
@@ -739,7 +739,7 @@ footer {
 .card-photo {
   margin-top: 10px;
   width: 165px;
-  height: 165;
+  height: 165px;
   border-radius: 30%;
   transition: transform 0.3s ease-out;
 }
@@ -805,8 +805,6 @@ footer {
     min-width: 95%;
   }
 }
-
-
 
 hr {
   border: none;
