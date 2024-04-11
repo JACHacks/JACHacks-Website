@@ -337,62 +337,28 @@ main {
   }
 }
 
-.star {
-    translate: none; 
-    rotate: none; 
-    scale: none; 
-    transform: translate3d(0px, 0px, 0px) rotate(0.2812deg);
-}
-
-.gear {
-    height: 5em;
-    position: absolute;
-    opacity: 0.7;
-}
-
-#gear1 {
-    left: 22%;
-    top: 32%;
-}
-
-#gear2 {
-    left: 72%;
-    top: 23%;
-}
-
-#computer-asset {
-    width: 25em;
-    position: absolute;
-    top: 27%;
-    left: 55%;
-    opacity: 0.75;
-}
-
 /* About */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  border: 2px solid #fff;
+  --shadow-color: hsl(220deg 100% 55%);
+  filter: drop-shadow(
+    1px 2px 8px var(--shadow-color)
+  );
+  border-radius: 5px;
+}
 
 #about {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content:center;
-  /* margin: 0 auto; */
   padding-top: 15vh;
-  /* max-width: 60%; */
   border-radius: 5px;
   margin-bottom: 5em;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    max-width: 60%;
-    border: 2px solid #fff;
-    --shadow-color: hsl(220deg 100% 55%);
-    filter: drop-shadow(
-      1px 2px 8px var(--shadow-color)
-    );
-    border-radius: 5px;
-    height: fit-content; /* Set the height to fit its content */
+  max-width: 100%;
 }
 
 .container-top {
@@ -413,149 +379,53 @@ main {
     flex-grow: 1;
 }
 
-.container-content.jac-pic {
-  padding: 0;
-  aspect-ratio: 2/1; /* Set aspect ratio to 1:1 */
-  overflow: hidden; /* Ensure image does not overflow container */
-}
-
-.container-content img {
-  width: 100%; /* Ensure image fills its container */
-  height: 100%; /* Ensure image fills its container */
-  object-fit: cover; /* Cover the entire container with the image */
-}
-
 .about-info {
-  width: 100%;
-    margin-bottom: 3em;
+  margin-bottom: 3em;
+  margin-right: 2em;
+  max-width: 40%;
 }
 
 .about-pic {
- width: 100%;
-}
-
-@media (max-width: 1920px) {
-  
-  .about-info, .about-pic {
-    min-width: 400px;
-  }
-
-  .container-content.jac-pic {
-    height: 213px;
-  }
-}
-
-@media (max-width: 1350px) {
-  #about {
-    flex-direction: column;
-    width: 80%;
-  }
-
-  .about-info, .about-pic {
-    min-width: 100%;
-    min-height: 100%;
-  }
-
-  .container-content.jac-pic {
-    height: 20%;
-  }
+  max-width: 40%;
+  margin-left: 2em;
 }
 
 @media (max-width: 992px) {
-    #about {
-      max-width: 70%;
-      flex-direction: column;
-    }
+  #about {
+    max-width: 70%;
+    flex-direction: column;
+  }
 
-    .navbar .toggle_btn {
-        display: block;
-    }
+  .about-info {
+    max-width: 100%;
+    margin-right: 0;
+  }
 
-    .logo img{
-        width: 4em;
-    }
+  .about-pic {
+    max-width: 100%;
+    margin-left: 0;
+  }
 
-    .container-top {
-        font-size: 1.6rem;
-    }
+  .navbar .toggle_btn {
+      display: block;
+  }
 
-    .container-content {
-        font-size: 1.1rem;
-    }
+  .logo img{
+      width: 4em;
+  }
 
-    #gear1 {
-        left: 12%;
-        top: 32%;
-    }
+  .container-top {
+      font-size: 1.6rem;
+  }
 
-    #gear2 {
-        left: 78%;
-        top: 25%;
-    }
-
-    .gear {
-        height: 4em;
-    }
-
-    #computer-asset {
-        width: 18em;
-        top: 27%;
-        left: 55%;
-    }
+  .container-content {
+      font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 720px) {
     #about {
       max-width: 80%;
-    }
-
-    .container-top {
-      font-size: 1.3rem;
-    }
-
-  .container-content {
-      font-size: 1rem;
-  }
-
-    #gear1 {
-        left: 12%;
-        top: 22%;
-    }
-
-    #gear2 {
-        left: 72%;
-        top: 17%;
-    }
-    .gear {
-        height: 3em;
-    }
-
-    #computer-asset {
-        width: 12em;
-        top: 21%;
-        left: 50%;
-    }
-}
-
-@media (max-width: 385px) {
-    #computer-asset {
-        width: 10em;
-        top: 18%;
-        left: 45%;
-    }
-
-    #gear1 {
-        left: 12%;
-        top: 20%;
-    }
-
-    #gear2 {
-        left: 72%;
-        top: 16%;
-    }
-
-    .gear {
-        height: 2.5em;
     }
 }
 
@@ -934,7 +804,7 @@ footer {
 
 hr {
   border: none;
-  border-top: 1px solid #ccc; /* You can change the color */
-  /* margin: 20px 0; You can adjust the margin */
+  border-top: 1 solid #ccc; /* You can change the color */
+  margin: 20px 0;
   width: 50%;
 }
