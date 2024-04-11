@@ -62,7 +62,6 @@ var aText = new Array(
       setTimeout("typewriter()", iSpeed);
      }
     }
-    
     typewriter();
 
 
@@ -76,7 +75,7 @@ const buttonAfter = document.querySelector('.glowbutton::after');
 
 glowButton.addEventListener('mouseover', () => {
     mainLogo.style.filter = 'drop-shadow(0px -20px 3px rgba(0, 0, 0, 0.885)) ';
-    typedText.style.filter = 'drop-shadow(0px -0.6em 0.2em rgb(0, 0, 0))';
+    typedText.style.filter = 'drop-shadow(0px -0.6em 0.1em rgb(0, 0, 0))';
     glowButton.classList.add('afterHover');
 });
 
