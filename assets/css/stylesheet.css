@@ -475,7 +475,6 @@ h1 {
   width: 100%;
   border-top: none;
   --shadow-color: hsla(305, 81%, 62%, 0.944);
-  filter: none;
 }
 
 .accordion__label {
