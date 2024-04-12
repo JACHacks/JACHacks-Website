@@ -29,8 +29,9 @@ window.addEventListener('click', (e) => {
 */
 // TYPEWRITER:
 // set up text to print, each item in array is new line
-let text = document.getElementById("team-title").textContent;
-if (text == "Rencontrez notre équipe") {
+let language = document.getElementsByTagName('html')[0].getAttribute('lang');
+
+if (language == "fr") {
     var aText = new Array(
         "11 et 12 mai 2024 • Collège John Abbott"
         );
