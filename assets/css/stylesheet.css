@@ -34,7 +34,7 @@ body {
 html {
   scroll-behavior: smooth
 }
-
+/*
 li {
   list-style: none
 }
@@ -149,7 +149,7 @@ header {
     display: block
   }
 }
-
+*/
 main {
   justify-content: center;
   display: flex;
@@ -586,7 +586,7 @@ h1 {
     font-size: .85rem
   }
 }
-
+/*
 footer {
   background-color: #07071f;
   color: white;
@@ -616,7 +616,7 @@ footer {
   .left {
     font-size: .9rem
   }
-}
+}*/
 
 .editorial {
   display: block;
