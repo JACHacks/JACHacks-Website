@@ -29,10 +29,19 @@ window.addEventListener('click', (e) => {
 */
 // TYPEWRITER:
 // set up text to print, each item in array is new line
+let text = document.getElementById("team-title").textContent;
+if (text == "Rencontrez notre équipe") {
+    var aText = new Array(
+        "11 et 12 mai 2024 • Collège John Abbott"
+        );
+}
+else {
+    var aText = new Array(
+        "May 11-12, 2024 • John Abbott College"
+        );
+}
 
-var aText = new Array(
-    "May 11-12, 2024 • John Abbott College"
-    );
+
 var iSpeed = 100; // time delay of print out
 var iIndex = 0; // start printing array at this posision
 var iArrLength = aText[0].length; // the length of the text array
