@@ -162,7 +162,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    height: 94vh;
+    height: 83vh;
     --color: rgba(114, 114, 114, 0.3);
     background-color: #241d40;
     background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
@@ -173,9 +173,9 @@ main {
 
 .intro {
   margin: 100%;
-    height: 95vh;
+    height: 90vh;
     margin: 0 auto;
-    padding-top: 6em;
+    padding-top: 1em;
     width: 80%;
     text-align: center;
     display: flex;
