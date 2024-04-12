@@ -1,6 +1,6 @@
 # JACHacks-Website
 This is the official JAC Hacks Website Repo.
-[Click Here](https://jachacks.pages.dev/) to view.
+[Click Here](https://johnabbott.qc.ca/jachacks) to view.
 
 ![new-logo](https://github.com/JACHacks/JACHacks-Website/assets/111912000/0d1cd43c-d7c9-47aa-9018-c924f6805077)
 
