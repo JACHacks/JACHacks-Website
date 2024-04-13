@@ -361,7 +361,7 @@ h1 {
 #faq .container {
     min-width: 80%;
     border-top: none;
-    --shadow-color: hsla(305, 81%, 62%, .944)
+    --shadow-color: hsla(305, 81%, 62%, .944);
 }
 
 .accordion__label {
@@ -446,7 +446,12 @@ h1 {
     #faq {
         flex-direction: column;
         align-items: center;
-        width: 95%
+        width: 95%;
+
+    }
+
+    #faq .container {
+        filter: none;
     }
 
     .accordion__label {
