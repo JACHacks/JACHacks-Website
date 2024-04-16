@@ -688,3 +688,50 @@ hr {
     margin: 20px 0;
     width: 50%
 }
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-reversed {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+#gear1 {
+    width: 10em;
+    animation: spin 5s linear infinite;
+}
+
+#gear2 {
+    width: 6em;
+    animation: spin-reversed 5s linear infinite;
+}
+
+.main-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This will keep a consistent distance */
+    position: relative;
+}
+
+.gears {
+    margin-right: 20px; /* Adjust this value as needed */
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(50deg);
+    position: absolute;
+    right: -25vw;
+    top: -5%;
+}
