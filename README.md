@@ -20,7 +20,7 @@ This repo contains the official website for JACHacks, established in march 2024.
 |-------------------|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Lucas Lalumière             | ${\color{yellow}   Technology  }$ |  [Instagram](https://jachacks.pages.dev/) <br>  [Linkedin](https://jachacks.pages.dev/)  <br> [Github](https://jachacks.pages.dev/)           |
 | Bogdan Feher           |  ${\color{yellow}   Technology  }$ |  [Instagram](https://jachacks.pages.dev/) <br>  [Linkedin](https://jachacks.pages.dev/)  <br> [Github](https://jachacks.pages.dev/)           |
-| Carson Spriggs           |  President |  [Instagram](https://jachacks.pages.dev/) <br>  [Linkedin](https://jachacks.pages.dev/)  <br> [Github](https://jachacks.pages.dev/)           |                   |
+| Carson Spriggs           |  Team Lead |  [Instagram](https://jachacks.pages.dev/) <br>  [Linkedin](https://jachacks.pages.dev/)  <br> [Github](https://jachacks.pages.dev/)           |                   |
 | Timothy Klint   |  Logistics |  [Instagram](https://jachacks.pages.dev/) <br>  [Linkedin](https://jachacks.pages.dev/)  <br> [Github](https://jachacks.pages.dev/)           |
 | Hana Moussaoui|  Promotions |  [Instagram](https://jachacks.pages.dev/) <br>  [Linkedin](https://jachacks.pages.dev/)  <br> [Github](https://jachacks.pages.dev/)           |
 
