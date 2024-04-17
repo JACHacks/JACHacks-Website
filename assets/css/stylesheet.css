@@ -89,8 +89,6 @@ main {
 }
 
 .main-logo {
-    width: 45em;
-    padding: .2em;
     filter: drop-shadow(0px -20px 6px rgba(0, 0, 0, .885));
     transition: all .2s ease-in-out;
     z-index: 0
@@ -157,79 +155,7 @@ main {
     z-index: 11
 }
 
-@media (max-width:1300px) {
-    .main-logo {
-        width: 40em
-    }
 
-    #typedtext {
-        font-size: 1.4rem
-    }
-}
-
-@media (max-width:800px) {
-    .main-logo {
-        width: 30em
-    }
-
-    #typedtext {
-        font-size: 1.2rem
-    }
-
-    .glowbutton {
-        font-size: .95rem
-    }
-}
-
-@media (max-width:560px) {
-    .main-logo {
-        width: 27em
-    }
-
-    #typedtext {
-        font-size: 1.1rem
-    }
-
-    .glowbutton {
-        --glow-color: rgba(180, 242, 245, .822);
-        --glow-spread-color: rgba(99, 163, 165, .78)
-    }
-}
-
-@media (max-width:480px) {
-    .main-logo {
-        width: 23em
-    }
-
-    #typedtext {
-        font-size: 1rem
-    }
-}
-
-@media (max-width:420px) {
-    .main-logo {
-        width: 20em
-    }
-
-    #typedtext {
-        margin-bottom: .8em
-    }
-}
-
-@media (max-width:380px) {
-    .main-logo {
-        width: 18em
-    }
-
-    .glowbutton {
-        margin-top: .6em
-    }
-
-    #typedtext {
-        margin-bottom: .7em;
-        font-size: .9em
-    }
-}
 
 .container {
     display: flex;
@@ -707,31 +633,139 @@ hr {
     }
 }
 
+/* 
 #gear1 {
-    width: 10em;
-    animation: spin 5s linear infinite;
+    max-width: 20%;
+    animation: spin 15s linear infinite;
 }
 
 #gear2 {
-    width: 6em;
-    animation: spin-reversed 5s linear infinite;
+    max-width: 15%;
+    animation: spin-reversed 15s linear infinite;
+} */
+
+#gear1 {
+    /* max-width: 10em; */
+    max-width: 58%;
+    animation: spin 20s linear infinite;
+}
+
+#gear2 {
+    max-width: 42%;
+    /* max-width: 6em; */
+    animation: spin-reversed 20s linear infinite;
+}
+
+#title {
+    width: 100%
+}
+
+.logo-title {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* width: 80dvw; */
 }
 
 .main-logo {
-    display: flex;
+    width: 800px;
+    padding-left: 5.5%;
+    display: grid;
+    grid-template-columns: 60% 40%; 
+    justify-content: center;
     align-items: center;
-    justify-content: space-between; /* This will keep a consistent distance */
-    position: relative;
+    /* margin-right: 50px; */
+    /* right: -80px; */
+    /* position: relative; */
 }
 
 .gears {
-    margin-right: 20px; /* Adjust this value as needed */
-    width: fit-content;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: rotate(50deg);
-    position: absolute;
-    right: -25vw;
-    top: -5%;
+    transform: rotate(45deg);
+    position: relative;
+    right: 20%;
+    top: -10%;
+}
+
+@media (max-width:1300px) {
+
+    .main-logo {
+        width: 600px
+    }
+
+    #typedtext {
+        font-size: 1.4rem
+    }
+}
+
+@media (max-width:800px) {
+
+    .main-logo {
+        width: 500px
+    }
+
+    #typedtext {
+        font-size: 1.2rem
+    }
+
+    .glowbutton {
+        font-size: .95rem
+    }
+}
+
+@media (max-width:560px) {
+
+    .main-logo {
+        width: 400px
+    }
+
+    #typedtext {
+        font-size: 1.1rem
+    }
+
+    .glowbutton {
+        --glow-color: rgba(180, 242, 245, .822);
+        --glow-spread-color: rgba(99, 163, 165, .78)
+    }
+}
+
+@media (max-width:480px) {
+    
+    .main-logo {
+        width: 350px
+    }
+
+    #typedtext {
+        font-size: 1rem
+    }
+}
+
+@media (max-width:420px) {
+
+    .main-logo {
+        width: 300px
+    }
+
+    #typedtext {
+        margin-bottom: .8em
+    }
+}
+
+@media (max-width:380px) {
+
+    .main-logo {
+        width: 80%
+    }
+
+    .glowbutton {
+        margin-top: .6em
+    }
+
+    #typedtext {
+        margin-bottom: .7em;
+        font-size: .9em
+    }
 }
