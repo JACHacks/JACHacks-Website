@@ -8,7 +8,6 @@ This is the official JAC Hacks Website Repo.
 ## Table of Contents:
  - [Overview](#overview)
  - [Team](#team)
- - [Guide](#guide)
 
    
 ## Overview
@@ -18,15 +17,8 @@ This repo contains the official website for JACHacks, established in march 2024.
 ## Team
 | Name         | Role                                                                                            | Socials                                                                                                                                                      |
 |-------------------|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lucas Lalumière             | ${\color{yellow}   Technology  }$ |  [Instagram](https://jachacks.pages.dev/) <br>  [Linkedin](https://jachacks.pages.dev/)  <br> [Github](https://jachacks.pages.dev/)           |
-| Bogdan Feher           |  ${\color{yellow}   Technology  }$ |  [Instagram](https://jachacks.pages.dev/) <br>  [Linkedin](https://jachacks.pages.dev/)  <br> [Github](https://jachacks.pages.dev/)           |
-| Carson Spriggs           |  Team Lead |  [Instagram](https://jachacks.pages.dev/) <br>  [Linkedin](https://jachacks.pages.dev/)  <br> [Github](https://jachacks.pages.dev/)           |                   |
-| Timothy Klint   |  Logistics |  [Instagram](https://jachacks.pages.dev/) <br>  [Linkedin](https://jachacks.pages.dev/)  <br> [Github](https://jachacks.pages.dev/)           |
-| Hana Moussaoui|  Promotions |  [Instagram](https://jachacks.pages.dev/) <br>  [Linkedin](https://jachacks.pages.dev/)  <br> [Github](https://jachacks.pages.dev/)           |
-
-## Guide
-
-In order to properly contribute to this repo, you must:
-1. Be an Organizer or Coordinator
-2. Be aware of school policies and restrictions.
-3. Follow proper workflow of the team.
+| Lucas Lalumière             | ${\color{yellow}   Technology  }$ |  [Linkedin](https://www.linkedin.com/in/lucas-lalumi%C3%A8re/)  <br> [Github](https://github.com/Shlucus)           |
+| Bogdan Feher           |  ${\color{yellow}   Technology  }$ |  [Linkedin](https://www.linkedin.com/in/bogdan-feher-b7567b203/)  <br> [Github](https://github.com/fehe-bo)           |
+| Carson Spriggs           |  Team Lead |  [Linkedin](www.linkedin.com/in/carsonspriggs)  <br> [Github](https://github.com/carsonSgit)           |                   |
+| Timothy Klint   |  Logistics |  [Linkedin](https://www.linkedin.com/in/timothy-klint/)  <br> [Github](https://github.com/tjklint)           |
+| Hana Moussaoui|  Promotions |  [Linkedin](https://www.linkedin.com/in/hana-louiza-moussaoui-015798292)  <br> [Github](https://github.com/HanaLouizaMoussaoui)           |
