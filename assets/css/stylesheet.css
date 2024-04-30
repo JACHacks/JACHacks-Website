@@ -21,19 +21,6 @@
     background: rgba(207, 130, 211, .523)
 }
 
-.change-language {
-    padding: 2px;
-    background-color: rgba(107, 138, 252, 255);
-    border: 2px solid #fff;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    position: absolute;
-    top: 1em;
-    right: 1em
-}
-
 .change-language button {
     background-color: rgba(107, 138, 252, 255);
     color: white;
@@ -184,38 +171,38 @@ main {
     margin-bottom: 6rem;
 }
 
-.sponsor {
-    position: relative; /* Add this line */
-    background-color: white;
-    width: 60%;
-    height: 180px;
+.sponsor-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    flex-direction: column;
+    margin-bottom: 2em;
+    width: 70%;
+}
+
+.sponsor {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 5;
+    transition: transform 0.3s ease;
+}
+
+.sponsor:hover {
+    transform: scale(1.11);
+}
+
+.sponsor, .border-outline {
+    height: 180px;
+    width: 80%;
 }
 
 .border-outline {
-    content: "";
-    position: relative;
-    width: 60%;
-    height: 180px;
-    left: 1.5%;
     background-color: rgb(138, 111, 250);
+    margin-left: 20px;
+    margin-top: -170px;
 }
-
-/*
-.sponsor::after {
-    content: "";
-    position: absolute;
-    top: calc(10%);
-    left: calc(10%);
-    width: 100%;
-    height: 180px;
-    background-color: rgb(138, 111, 250);
-    z-index: -1;
-}*/
 
 .sponsor a {
     display: flex;
@@ -228,7 +215,7 @@ main {
 }
 
 .sujac img {
-    width: 50%;
+    width: 60%;
 }
 
 .valnet img {
@@ -281,6 +268,10 @@ main {
         flex-direction: column
     }
 
+    .sponsor-container {
+        width: 90%;
+    }
+
     .about-info {
         max-width: 100%;
         margin-right: 0
@@ -307,13 +298,14 @@ main {
         font-size: 1.1rem
     }
 
-    .sponsor {
+    .sponsor, .border-outline{
         width: 70%;
         height: 140px;
     }
 
-    .sujac img {
-        width: 70%;
+    .border-outline {
+        margin-top: -132px;
+        margin-left: 15px;
     }
 }
 
@@ -322,9 +314,18 @@ main {
         max-width: 80%
     }
 
-    .sponsor {
+    .sponsor-container {
+        width: 100%;
+    }
+
+    .sponsor, .border-outline {
         width: 80%;
         height: 120px;
+    }
+
+    .border-outline {
+        margin-top: -113px;
+        margin-left: 14px;
     }
 }
 
