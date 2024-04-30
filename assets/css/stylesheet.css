@@ -198,8 +198,24 @@ main {
     width: 80%;
 }
 
+:root {
+    --my-gradient: linear-gradient(to right, rgb(138, 111, 250), rgb(38, 162, 255));
+  }
+
+#first-sponsor {
+    --gradient: rgb(138, 111, 250);
+}
+
+#middle-sponsor {
+    --gradient: linear-gradient(to top right, rgb(138, 111, 250), rgb(38, 162, 255));
+}
+
+#last-sponsor {
+    --gradient: rgb(38, 162, 255);
+}
+
 .border-outline {
-    background-color: rgb(138, 111, 250);
+    background: var(--gradient);
     margin-left: 20px;
     margin-top: -170px;
 }
@@ -214,12 +230,8 @@ main {
     width: 70%;
 }
 
-.sujac img {
-    width: 60%;
-}
-
 .valnet img {
-    width: 60%;
+    width: 50%;
 }
 
 
@@ -306,6 +318,14 @@ main {
     .border-outline {
         margin-top: -132px;
         margin-left: 15px;
+    }
+
+    .sujac img {
+        width: 65%;
+    }
+
+    .valnet img {
+        width: 60%;
     }
 }
 
