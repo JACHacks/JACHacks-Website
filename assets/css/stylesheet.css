@@ -186,8 +186,29 @@ main {
 
 .sponsor {
     background-color: white;
-    filter: drop-shadow(1px 2px 8px var(--shadow-color));
-        --shadow-color: hsla(280, 100%, 55%, .944)
+    width: 60%;
+    height: 180px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.sponsor a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gradient-outline {
+    border-inline-end: 0.5em solid;
+    border-block-end: .5em solid;
+    padding: 10px;
+    border-image-source: linear-gradient(red, blue);
+    border-image-slice: 1;
+}
+
+.sponsor img {
+    width: 70%;
 }
 
 #about {
@@ -260,11 +281,21 @@ main {
     .container-content {
         font-size: 1.1rem
     }
+
+    .sponsor {
+        background-color: white;
+        width: 70%;
+    }
 }
 
 @media (max-width:720px) {
     #about {
         max-width: 80%
+    }
+
+    .sponsor {
+        background-color: white;
+        width: 80%;
     }
 }
 
