@@ -185,31 +185,56 @@ main {
 }
 
 .sponsor {
+    position: relative; /* Add this line */
     background-color: white;
     width: 60%;
     height: 180px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
-    margin-bottom: 20px;
+    z-index: 5;
 }
+
+.border-outline {
+    content: "";
+    position: relative;
+    width: 60%;
+    height: 180px;
+    left: 1.5%;
+    background-color: rgb(138, 111, 250);
+}
+
+/*
+.sponsor::after {
+    content: "";
+    position: absolute;
+    top: calc(10%);
+    left: calc(10%);
+    width: 100%;
+    height: 180px;
+    background-color: rgb(138, 111, 250);
+    z-index: -1;
+}*/
 
 .sponsor a {
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.gradient-outline {
-    border-inline-end: 0.5em solid;
-    border-block-end: .5em solid;
-    padding: 10px;
-    border-image-source: linear-gradient(red, blue);
-    border-image-slice: 1;
+    align-items: center;
 }
 
 .sponsor img {
     width: 70%;
 }
+
+.sujac img {
+    width: 50%;
+}
+
+.valnet img {
+    width: 60%;
+}
+
 
 #about {
     display: flex;
@@ -283,7 +308,11 @@ main {
     }
 
     .sponsor {
-        background-color: white;
+        width: 70%;
+        height: 140px;
+    }
+
+    .sujac img {
         width: 70%;
     }
 }
@@ -294,8 +323,8 @@ main {
     }
 
     .sponsor {
-        background-color: white;
         width: 80%;
+        height: 120px;
     }
 }
 
