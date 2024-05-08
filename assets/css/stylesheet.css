@@ -186,11 +186,11 @@ main {
     justify-content: center;
     align-items: center;
     z-index: 5;
-    transition: transform 0.3s ease;
+    transition: transform 0.1s
 }
 
 .sponsor:hover {
-    transform: scale(1.11);
+    transform: scale(1.12);
 }
 
 .sponsor, .border-outline {
@@ -236,6 +236,13 @@ main {
 
 .valnet img {
     width: 35%;
+}
+
+#ITS-sponsor {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 
@@ -290,6 +297,10 @@ main {
     
     .valnet img {
         width: 40%;
+    }
+
+    #ITS-sponsor {
+        font-size: 2rem;
     }
     
 }
@@ -351,6 +362,11 @@ main {
     .valnet img {
         width: 60%;
     }
+
+    
+    #ITS-sponsor {
+        font-size: 1.75rem;
+    }
     
 
 }
@@ -372,6 +388,10 @@ main {
     .border-outline {
         margin-top: -113px;
         margin-left: 14px;
+    }
+
+    #ITS-sponsor {
+        font-size: 1.5rem;
     }
 
 }
