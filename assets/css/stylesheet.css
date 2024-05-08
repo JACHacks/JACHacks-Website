@@ -227,11 +227,15 @@ main {
 }
 
 .sponsor img {
-    width: 70%;
+    width: 55%;
+}
+
+.sujac img {
+    width: 65%;
 }
 
 .valnet img {
-    width: 50%;
+    width: 35%;
 }
 
 
@@ -274,6 +278,22 @@ main {
     margin-left: 2em
 }
 
+@media (max-width: 1500px)
+{
+    .sponsor img {
+        width: 65%;
+    }
+    
+    .sujac img {
+        width: 55%;
+    }
+    
+    .valnet img {
+        width: 40%;
+    }
+    
+}
+
 @media (max-width:992px) {
     #about {
         max-width: 70%;
@@ -311,13 +331,17 @@ main {
     }
 
     .sponsor, .border-outline{
-        width: 70%;
+        width: 65%;
         height: 140px;
     }
 
     .border-outline {
         margin-top: -132px;
         margin-left: 15px;
+    }
+
+    .sponsor img {
+        width: 75%;
     }
 
     .sujac img {
@@ -327,6 +351,8 @@ main {
     .valnet img {
         width: 60%;
     }
+    
+
 }
 
 @media (max-width:720px) {
@@ -347,6 +373,7 @@ main {
         margin-top: -113px;
         margin-left: 14px;
     }
+
 }
 
 .stuff {
@@ -362,6 +389,10 @@ h1 {
     font-size: 2em;
     margin: 0;
     margin-top: 5vw
+}
+
+#sponsors h1 {
+    font-size: 2.25em;
 }
 
 .accordion-title {
